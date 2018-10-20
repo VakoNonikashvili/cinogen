@@ -70,6 +70,7 @@
     border: 0;
     color: #fff;
     outline: 0;
+    width: 100%;
 }
 
 .nav-search-input::-webkit-input-placeholder {
