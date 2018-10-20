@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./header.css" />
+    <link rel="stylesheet" href="./frontpage.css" />
+    <title>Cineplex</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container between">
+            <h1>Cineplex</h1>
+            <span class="header-account">My account</span>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container between">
+            <div class="nav-row">
+                <div class="nav-row-item">
+                    <img src="./icons/movies-icon.png" />
+                    <span class="nav-row-text">Movies</span>
+                </div>
+                <div class="nav-row-item">
+                    <img src="./icons/tv-icon.png" />
+                    <span class="nav-row-text">Series</span>
+                </div>
+                <div class="nav-row-item">
+                    <img src="./icons/movies-icon.png" />
+                    <span class="nav-row-text">Collections</span>
+                </div>
+            </div>
+            <div class="nav-search">
+                <input class="nav-search-input" type="text" placeholder="Search" />
+                <img src="./icons/search.png" />
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <h2 class="front-heading front-heading-top">Recently</h2>
+        <div class="between">
+            <h2 class="front-heading pink">Added This Week</h2>
+            <div class="view-all">
+                <span>View All</span>
+                <img class="view-all-img" src="./icons/right.png" />
+            </div>
+        </div>
+        <div class="this-week">
+            <div class="this-week-item">
+                <img class="this-week-img" src="./img/jumanji.jpg" />
+                <div class="this-week-absolute">
+                    <span class="front-text">Jumanji: Welcome to the Jungle</span>
+                    <span class="front-text-sm">Action, Adventure, Comedy, Fantasy</span>
+                </div>
+                <div class="player-container">
+                    <div class="player-icon-box">
+                        <img src="./icons/play.png" />
+                    </div>
+                </div>
+                <div class="overlay this-week-overlay"></div>
+            </div>
+            <div class="this-week-item">
+                <img class="this-week-img" src="./img/batman.jpg" />
+                <div class="this-week-absolute">
+                    <span class="front-text">Tag</span>
+                    <span class="front-text-sm">For one month every year, five highly competitive</span>
+                    <span class="front-text-sm">friends hit the ground running in…</span>
+                </div>
+                <div class="player-container">
+                    <div class="player-icon-box">
+                        <img src="./icons/play.png" />
+                    </div>
+                </div>
+                <div class="overlay this-week-overlay"></div>
+            </div>
+            <div class="this-week-item">
+                    <img class="this-week-img" src="./img/ragnarok.jpg" />
+                <div class="this-week-absolute">
+                    <span class="front-text">Thor: Ragnarok</span>
+                    <span class="front-text-sm">Action & Adventure</span>
+                </div>
+                <div class="player-container">
+                    <div class="player-icon-box">
+                        <img src="./icons/play.png" />
+                    </div>
+                </div>
+                <div class="overlay this-week-overlay"></div>
+            </div>
+        </div>
+        <div class="dots">
+            <div class="dot-item dot-item-active"></div>
+            <div class="dot-item"></div>
+            <div class="dot-item"></div>
+            <div class="dot-item"></div>
+            <div class="dot-item"></div>
+            <div class="dot-item"></div>
+            <div class="dot-item"></div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <h2 class="front-heading front-heading-top">Continue</h2>
+        <div class="between">
+            <h2 class="front-heading pink">Watching</h2>
+            <div class="view-all">
+                <span class="view-all-text">View All</span>
+                <div class="view-box">
+                    <img src="./icons/left.png" class="disabled" />
+                </div>
+                <div class="view-box">
+                    <img src="./icons/right.png" />
+                </div>
+            </div>
+        </div>
+        <div class="continue">
+            <div class="continue-item">
+                <img src="./img/movie1.jpg" class="continue-img" />
+                <div class="red-pill">New</div>
+                <div class="overlay"></div>
+                <div class="continue-overlay-content">
+                    <span class="continue-overlay-text">Avengers Infinity War</span>
+                    <span class="continue-overlay-text">Part II</span>
+                    <button class="continue-btn continue-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="continue-btn continue-watchlist">Add to watch list</button>
+                </div>
+                <div class="progress">
+                    <div class="progress-inside"></div>
+                </div>
+            </div>
+            <div class="continue-item">
+                <img src="./img/movie2.jpg" class="continue-img" />
+                <div class="blue-pill">New episode</div>
+                <div class="overlay"></div>
+                <div class="continue-overlay-content">
+                    <span class="continue-overlay-text">Death of Superman</span>
+                    <span class="continue-overlay-text">Part III</span>
+                    <button class="continue-btn continue-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="continue-btn continue-watchlist">Add to watch list</button>
+                </div>
+                <div class="progress">
+                    <div class="progress-inside w-25"></div>
+                </div>
+            </div>
+            <div class="continue-item">
+                <img src="./img/movie3.jpg" class="continue-img" />
+                <div class="overlay"></div>
+                <div class="continue-overlay-content">
+                    <span class="continue-overlay-text">Deadpool Movie</span>
+                    <span class="continue-overlay-text">Part I</span>
+                    <button class="continue-btn continue-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="continue-btn continue-watchlist">Add to watch list</button>
+                </div>
+                <div class="progress">
+                    <div class="progress-inside w-90"></div>
+                </div>
+            </div>
+            <div class="continue-item">
+                <img src="./img/movie4.jpg" class="continue-img" />
+                <div class="overlay"></div>
+                <div class="continue-overlay-content">
+                    <span class="continue-overlay-text">Patient Zero</span>
+                    <span class="continue-overlay-text">Part I</span>
+                    <button class="continue-btn continue-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="continue-btn continue-watchlist">Add to watch list</button>
+                </div>
+                <div class="progress">
+                    <div class="progress-inside w-30"></div>
+                </div>
+            </div>
+            <div class="continue-item">
+                <img src="./img/movie5.jpg" class="continue-img" />
+                <div class="overlay"></div>
+                <div class="continue-overlay-content">
+                    <span class="continue-overlay-text">Upgrade Movie</span>
+                    <span class="continue-overlay-text">Part IV</span>
+                    <button class="continue-btn continue-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="continue-btn continue-watchlist">Add to watch list</button>
+                </div>
+                <div class="progress">
+                    <div class="progress-inside w-75"></div>
+                </div>
+            </div>
+            <div class="continue-item">
+                <img src="./img/movie6.jpg" class="continue-img" />
+                <div class="overlay"></div>
+                <div class="continue-overlay-content">
+                    <span class="continue-overlay-text">My Neighbour?</span>
+                    <span class="continue-overlay-text">Part I</span>
+                    <button class="continue-btn continue-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="continue-btn continue-watchlist">Add to watch list</button>
+                </div>
+                <div class="progress">
+                    <div class="progress-inside w-90"></div>
+                </div>
+            </div>
+            <div class="continue-item">
+                <img src="./img/movie7.jpg" class="continue-img" />
+                <div class="overlay"></div>
+                <div class="continue-overlay-content">
+                    <span class="continue-overlay-text">SuperFly Movie</span>
+                    <span class="continue-overlay-text">Part III</span>
+                    <button class="continue-btn continue-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="continue-btn continue-watchlist">Add to watch list</button>
+                </div>
+                <div class="progress">
+                    <div class="progress-inside w-25"></div>
+                </div>
+            </div>
+        </div>
+        <div class="big-progress">
+            <div class="big-progress-inside"></div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h2 class="front-heading front-heading-top">Your Watch List</h2>
+        <div class="continue">
+            <div class="continue-item">
+                <img src="./img/movie15.jpg" class="continue-img" />
+            </div>
+            <div class="continue-item">
+                <img src="./img/movie16.jpg" class="continue-img" />
+            </div>
+            <div class="continue-item">
+                <img src="./img/movie17.jpg" class="continue-img" />
+            </div>
+            <div class="continue-item">
+                <img src="./img/movie18.jpg" class="continue-img" />
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container ending">
+        <h2 class="front-heading front-heading-top">Popular</h2>
+        <div class="between">
+            <h2 class="front-heading pink">This Week</h2>
+            <div class="view-all">
+                <span class="view-all-text">View All</span>
+                <div class="view-box">
+                    <img src="./icons/left.png" class="disabled" />
+                </div>
+                <div class="view-box">
+                    <img src="./icons/right.png" />
+                </div>
+            </div>
+        </div>
+        <div class="continue">
+            <div class="continue-item">
+                <img src="./img/movie8.jpg" class="continue-img" />
+            </div>
+            <div class="continue-item">
+                <img src="./img/movie9.jpg" class="continue-img" />
+            </div>
+            <div class="continue-item">
+                <img src="./img/movie10.jpg" class="continue-img" />
+            </div>
+            <div class="continue-item">
+                <img src="./img/movie11.jpg" class="continue-img" />
+            </div>
+            <div class="continue-item">
+                <img src="./img/movie12.jpg" class="continue-img" />
+            </div>
+            <div class="continue-item">
+                <img src="./img/movie13.jpg" class="continue-img" />
+            </div>
+            <div class="continue-item">
+                <img src="./img/movie14.jpg" class="continue-img" />
+            </div>
+        </div>
+        <div class="big-progress">
+            <div class="big-progress-inside"></div>
+        </div>
+    </div>
+
+
+</body>
+</html>

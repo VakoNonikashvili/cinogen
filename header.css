@@ -1,0 +1,99 @@
+.main-header {
+    height: 50px;
+    background-color: #1b1d27;
+}
+
+.main-header h1 {
+    font-family: Pacifico;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.header-account {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--light);
+}
+
+.between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+}
+
+
+.main-nav {
+    height: 50px;
+    background-color: var(--dark2);
+}
+
+.nav-row {
+    display: flex;
+    align-items: center;
+}
+
+.nav-row-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-row-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav-row-item img {
+    width: 17px;
+    height: auto;
+    display: block;
+    margin-right: 8px;
+}
+
+.nav-row-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ebebeb;
+}
+
+.nav-search {
+    position: relative;
+    width: 227px;
+}
+
+.nav-search-input {
+    padding: 5px 18px;
+    border-radius: 14px;
+    background-color: var(--black);
+    border: 0;
+    color: #fff;
+    outline: 0;
+}
+
+.nav-search-input::-webkit-input-placeholder {
+    opacity: 1;
+    color: #fff;
+}
+.nav-search-input:-ms-input-placeholder {
+    opacity: 1;
+    color: #fff;
+}
+.nav-search-input::-ms-input-placeholder {
+    opacity: 1;
+    color: #fff;
+}
+.nav-search-input::placeholder {
+    opacity: 1;
+    color: #fff;
+}
+
+.nav-search img {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 15px;
+    height: auto;
+}
