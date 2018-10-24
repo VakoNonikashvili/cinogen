@@ -62,18 +62,6 @@
     z-index: 9;
 }
 
-.overlay {
-    background-color: rgba(3, 5, 11, 0.8);
-    box-shadow: inset 0 0 0 3000px rgba(0,0,0,0.3);
-    filter: blur(10px);
-    position: absolute;
-    top: -25px;
-    left: -25px;
-    width: 200%;
-    height: 200%;
-    display: none;
-}
-
 .this-week-overlay {
     display: none;
 }
@@ -218,7 +206,7 @@
     display: flex;
 }
 
-.continue-item:hover .continue-img  {
+.continue-item:hover .img-blur  {
     filter: blur(2.4px);
 }
 

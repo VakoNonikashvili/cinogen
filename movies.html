@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./header.css" />
+    <link rel="stylesheet" href="./movies.css" />
+    <title>Cineplex</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container between">
+            <h1>CinoGen</h1>
+            <div class="header-row">
+                <button class="header-btn">Get premium</button>
+                <img src="./icons/mail.svg" class="header-icon-ml" />
+                <img src="./icons/bell.svg" class="header-icon" />
+                <img src="./icons/user.svg" class="header-icon" />
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container between">
+            <div class="nav-row">
+                <div class="nav-row-item nav-active-item">
+                    <img src="./icons/movies-icon.png" />
+                    <span class="nav-row-text">Movies</span>
+                </div>
+                <div class="nav-row-item">
+                    <img src="./icons/tv-icon.png" />
+                    <span class="nav-row-text">TV Series</span>
+                </div>
+                <div class="nav-row-item">
+                    <img src="./icons/collections.svg" />
+                    <span class="nav-row-text">Collections</span>
+                </div>
+            </div>
+            <div class="nav-search">
+                <input class="nav-search-input" type="text" placeholder="Search" />
+                <img src="./icons/search.png" />
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="sub-between">
+            <div class="sub-nav">
+                <span class="sub-nav-item subnav-active">All movies</span>
+                <span class="sub-nav-item">Recently Added</span>
+                <span class="sub-nav-item">Popularity</span>
+            </div>
+            <button class="filter-btn">
+                <span>Filter</span>
+                <img src="./icons/chevron-down.svg" />
+            </button>
+        </div>
+        <div class="divider"></div>
+    </div>
+
+    <div class="filter-fluid">
+        <div class="container">
+            <div class="filter-close">
+                <img src="./icons/close.svg" />
+            </div>
+            <div class="filter-row">
+                <div class="filter-col">
+                    <span class="filter-heading">Type</span>
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <p>All</p>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <p>Movies</p>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <p>TV Series</p>
+                    </label>
+                </div>
+                <div class="filter-col">
+                    <span class="filter-heading">Genres</span>
+                    <div class="filter-input-row">
+                        <div class="filter-input-col">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <p>Action</p>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <p>Biography</p>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <p>Documentary</p>
+                            </label>
+                        </div>
+                        <div class="filter-input-col">
+                            <label class="checkbox">
+                                <input type="checkbox" checked>
+                                <span class="checkmark"></span>
+                                <p>Adventure</p>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <p>Comedy</p>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <p>Drama</p>
+                            </label>
+                        </div>
+                        <div class="filter-input-col">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <p>Crime</p>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <p>Family</p>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <p>Horror</p>
+                            </label>
+                        </div>
+                        <div class="filter-input-col">
+                            <label class="checkbox">
+                                <input type="checkbox" checked>
+                                <span class="checkmark"></span>
+                                <p>Fanatsy</p>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <p>Western</p>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <p>Sci-Fi</p>
+                            </label>
+                        </div>
+                        <div class="filter-input-col">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <p>History</p>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <p>Mystery</p>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <p>Thriller</p>
+                            </label>
+                        </div>
+                        <div class="filter-input-col">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <p>Romance</p>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" checked>
+                                <span class="checkmark"></span>
+                                <p>War</p>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <p>Animaton</p>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="grid">
+            <div class="card">
+                <img src="./img/movie1.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/movie2.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/movie3.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/movie5.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/movie6.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/movie7.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/movie8.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/movie9.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/movie10.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/movie11.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/movie12.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/movie13.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/movie14.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/movie15.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/movie16.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/movie17.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/movie18.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/movie19.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/movie1.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/movie2.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/movie3.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/movie4.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/movie5.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/movie6.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/movie7.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/movie8.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/movie9.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/movie10.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/movie11.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/movie12.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/movie15.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/movie16.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/movie17.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/movie18.jpg" class="movie-img img-blur" />
+                <div class="overlay"></div>
+                <div class="overlay-details">
+                    <span class="overlay-text">Avengers Infinity</span>
+                    <span class="overlay-text">War Part II</span>
+                    <button class="movie-btn movie-play">
+                        <span>Play</span>
+                        <img src='./icons/play.png' />
+                    </button>
+                    <button class="movie-btn movie-light">Add to watch list</button>
+                    <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                </div>
+            </div>
+            <div class="card">
+                    <img src="./img/movie5.jpg" class="movie-img img-blur" />
+                    <div class="overlay"></div>
+                    <div class="overlay-details">
+                        <span class="overlay-text">Avengers Infinity</span>
+                        <span class="overlay-text">War Part II</span>
+                        <button class="movie-btn movie-play">
+                            <span>Play</span>
+                            <img src='./icons/play.png' />
+                        </button>
+                        <button class="movie-btn movie-light">Add to watch list</button>
+                        <button class="movie-btn movie-light collection-btn">Add to collection</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

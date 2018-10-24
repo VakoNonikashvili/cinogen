@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="15px" viewBox="0 0 17 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>TV-series</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="70.2508315%" y1="19.5864004%" x2="6.86523699%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#553CF1" offset="0%"></stop>
+            <stop stop-color="#392DD8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="31.6236053%" y1="92.4480915%" x2="40.2593415%" y2="-8.3309105%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#ECE6FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="77.8502882%" x2="0%" y2="77.8502882%" id="linearGradient-3">
+            <stop stop-color="#6A54FF" offset="0%"></stop>
+            <stop stop-color="#4F39EC" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="TV---Header" transform="translate(-160.000000, -68.000000)">
+            <g id="Group-11" transform="translate(40.000000, 65.000000)">
+                <g id="TV-series" transform="translate(120.000000, 3.000000)">
+                    <rect id="Rectangle-11" fill="#FFFFFF" x="4.76" y="12.92" width="7.48" height="2.04" rx="1"></rect>
+                    <path d="M3,0 L14,-4.4408921e-16 C15.6568542,-7.48448398e-16 17,1.34314575 17,3 L17,10.6 C17,12.2568542 15.6568542,13.6 14,13.6 L4,13.6 C1.790861,13.6 2.705415e-16,11.809139 0,9.6 L0,3 C-2.02906125e-16,1.34314575 1.34314575,-1.39730022e-16 3,-4.4408921e-16 Z" id="Rectangle-7-Copy-3" fill="url(#linearGradient-1)"></path>
+                    <path d="M8.18578551,4.12653362 L9.92606955,5.86681766 C10.3165938,6.25734195 10.3165938,6.89050693 9.92606955,7.28103122 C9.799454,7.40764677 9.64116377,7.49794247 9.46773151,7.54248735 L7.12161669,8.14507085 C6.58669417,8.28246203 6.04167622,7.9601992 5.90428504,7.42527668 C5.8622313,7.26154349 5.86237155,7.08982162 5.9046927,6.92615736 L6.51052348,4.58328982 C6.64878828,4.04859244 7.19433193,3.72722034 7.72902931,3.86548515 C7.90185192,3.91017451 8.05956191,4.00031002 8.18578551,4.12653362 Z" id="Rectangle-9-Copy" fill="url(#linearGradient-2)" transform="translate(8.134599, 5.916392) rotate(-135.000000) translate(-8.134599, -5.916392) "></path>
+                    <path d="M3.39459799,10.2 L14,10.2 C15.6568542,10.2 17,11.5431458 17,13.2 L17,13.594598 L0,13.594598 L0,13.594598 C-2.29594909e-16,11.7198133 1.51981329,10.2 3.39459799,10.2 Z" id="Rectangle-8-Copy-4" fill="url(#linearGradient-3)" transform="translate(8.500000, 11.897299) rotate(-180.000000) translate(-8.500000, -11.897299) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
