@@ -1,0 +1,39 @@
+.filter-fluid {
+  background-image: linear-gradient(121deg, #10172b, #070b16);
+}
+
+.filter-close {
+  margin-left: auto;
+}
+
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.pagination > div:not(:last-child) {
+  margin-right: 15px;
+}
+
+.pagination-item {
+  width: 56px;
+  height: 56px;
+  background-color: var(--dark);
+  border-radius: 50%;
+  font-size: 17px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+
+.pagination-active {
+  background-color: var(--blue);
+}
