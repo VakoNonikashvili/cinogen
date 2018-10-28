@@ -47,6 +47,10 @@
   margin-top: 10px;
 }
 
+.overlay-mt-big {
+  margin-top: 3.2rem;
+}
+
 .overlay-text {
   font-size: 18px;
   display: block;
@@ -91,4 +95,38 @@
 
 .collection-btn {
   margin-top: 3px;
+}
+
+
+
+.add-request {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.add-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 75px;
+  border: solid 2px var(--blue);
+  border-radius: 50%;
+  background: transparent;
+}
+
+.add-box img {
+  width: 24px;
+  height: 24px;
+}
+
+
+.add-request-text {
+  font-size: 15px;
+  margin-top: 2.4rem;
 }

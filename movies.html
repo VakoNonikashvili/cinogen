@@ -55,7 +55,7 @@
                 <span class="sub-nav-item">Recently Added</span>
                 <span class="sub-nav-item">Popularity</span>
             </div>
-            <button class="filter-btn">
+            <button class="filter-btn" id="filter-btn" onclick="toggleFilter()">
                 <span>Filter</span>
                 <img src="./icons/chevron-down.svg" />
             </button>
@@ -63,10 +63,9 @@
         <div class="divider"></div>
     </div>
 
-    <!--
-    <div class="filter-fluid">
+    <div class="filter-fluid d-none" id="filter">
         <div class="container">
-            <div class="filter-close">
+            <div class="filter-close" id="close-btn" onclick="toggleFilter()">
                 <img src="./icons/close.svg" />
             </div>
             <div class="filter-row">
@@ -89,7 +88,17 @@
                     </label>
                 </div>
                 <div class="filter-col">
-                    <span class="filter-heading">Genres</span>
+                    <div class="genre-row">
+                        <span class="filter-heading nom">Genres</span>
+                        <div class="toggle-group">
+                            <span class="toggle-text toggle-text-first">Or</span>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <span class="toggle-text toggle-text-second">And</span>
+                        </div>
+                    </div>
                     <div class="filter-input-row">
                         <div class="filter-input-col">
                             <label class="checkbox">
@@ -195,10 +204,49 @@
                         </div>
                     </div>
                 </div>
+                <div class="filter-col">
+                    <span class="filter-heading filter-heading-disabled">Release date</span>
+                    <div class="date-row">
+                        <label class="date-col">
+                            <span class="date-label">From</span>
+                            <input type="text" class="date-input" />
+                        </label>
+                        <label class="date-col">
+                            <span class="date-label">To</span>
+                            <input type="text" class="date-input" />
+                        </label>
+                    </div>
+                </div>
+                <div class="filter-col">
+                    <span class="filter-heading">iMDB Rating</span>
+                    <div class="date-row">
+                        <label class="rating-col">
+                            <span class="rating-label">Minimum</span>
+                            <input type="text" class="rating-input" value="5.0"/>
+                        </label>
+                        <span class="rating-label rating-label-big">x</span>
+                        <label class="rating-col">
+                            <span class="rating-label">Maximum</span>
+                            <input type="text" class="rating-input" value="9.0" />
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="clear-filter">
+                <button class="clear-btn">
+                    <img src="./icons/close-white.svg" />
+                    Clear All Filters
+                </button>
+                <button class="search-btn">Search</button>
             </div>
         </div>
     </div>
--->
+    <script>
+        function toggleFilter() {
+        var element = document.getElementById("filter");
+        element.classList.toggle("d-none");
+    } 
+    </script>
 
 
     <div class="container grid-parent">
