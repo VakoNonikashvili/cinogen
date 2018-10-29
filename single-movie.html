@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./global.css" />
     <link rel="stylesheet" href="./header.css" />
     <link rel="stylesheet" href="./single.css" />
+    <link rel="stylesheet" href="./frontpage.css" />
     <title>Cineplex</title>
 </head>
 <body>
@@ -49,16 +50,142 @@
 
     <div class="bg-img">
         <div class="single">
-            <div class="container">
-                <div class="single-row">
+            <div class="container single-row">
+                <div class="single-row-child">
                     <div class="single-box">
-                        <img src="./img/galaxy-small.jpg" />
+                        <img src="./img/galaxy-small.jpg" class="single-box-img" />
+                        <div class="player-container single-item-player">
+                            <div class="player-icon-box">
+                                <img src="./icons/play.png" />
+                            </div>
+                        </div>
                     </div>
                     <div class="single-col">
-    
+                        <h2 class="single-col-heading">Guardians of the galaxy Vol. 2</h2>
+                        <div class="single-tag-row">
+                            <button class="tag-btn">Drama</button>
+                            <button class="tag-btn">Sci-Fi</button>
+                        </div>
+                        <div class="single-detail-row">
+                            <div class="single-detail-col">
+                                <span class="single-detail-head">Runtime</span>
+                                <span class="single-detail-text">1h 58m</span>
+                            </div>
+                            <div class="single-detail-col">
+                                <span class="single-detail-head">Release year</span>
+                                <span class="single-detail-text">2018</span>
+                            </div>
+                            <div class="single-detail-col">
+                                <span class="single-detail-head">Rated</span>
+                                <span class="single-detail-text">PG-13</span>
+                            </div>
+                            <div class="single-detail-col">
+                                <span class="single-detail-head">IMDB</span>
+                                <span class="single-detail-text">6.4</span>
+                            </div>
+                        </div>
+                        <div class="single-desc">
+                            <span class="single-detail-head">STORYLINE</span>
+                            <span class="single-detail-light">A group of intergalactic criminals are forced to work together to<br />stop a fanatical warrior from taking control of the universe.</span>
+                        </div>
+                        <div class="single-settings">
+                            <span class="single-settings-head">Try another video player (these links open in almost-fullscreen by default):</span>
+                            <span class="single-settings-text">1. New video player (supports Chromecast on Chrome for Mac/Windows, AirPlay on Safari) | <span class="single-settings-highlight">720p</span></span>
+                            <span class="single-settings-text">2. Native video player (supports AirPlay and PIP on Safari) | <span class="single-settings-highlight">720p</span></span>
+                        </div>
                     </div>
-    
+                    <div class="action-col">
+                        <span class="action-col-item">Watch trailer</span>
+                        <div class="action-col-item">
+                            <span>Add to collection</span>
+                            <img src="./icons/add.svg" class="action-icon" />
+                        </div>
+                        <div class="action-col-item">
+                            <span>Download</span>
+                            <span class="action-darker">720p</span>
+                            <span class="action-darker">1080p</span>
+                        </div>
+                        <div class="action-col-item">
+                            <span>Upload subtitle .srt</span>
+                            <img src="./icons/subtitle.svg" class="action-icon"/>
+                        </div>
+                        <div class="action-col-item">
+                            <div class="server-row">
+                                <span class="server-select">Select server</span>
+                                <img src="./icons/server.svg" class="action-icon"/>
+                            </div>
+                            <img src="./icons/chevron-down.svg" class="action-icon" />
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container ending">
+        <h2 class="front-heading front-heading-top">Cast</h2>
+        <div class="between">
+            <h2 class="front-heading pink">overview</h2>
+            <div class="view-all">
+                <span class="view-all-text">View All</span>
+                <div class="view-box">
+                    <img src="./icons/left.png" class="disabled" />
+                </div>
+                <div class="view-box">
+                    <img src="./icons/right.png" />
+                </div>
+            </div>
+        </div>
+        <div class="continue">
+            <div class="continue-wrap">
+                <div class="continue-item">
+                    <img src="./img/movie8.jpg" class="continue-img" />
+                </div>
+                <span class="continue-wrap-head">James Gunn</span>
+                <span class="continue-wrap-text">Director</span>
+            </div>
+            <div class="continue-wrap">
+                <div class="continue-item">
+                    <img src="./img/movie1.jpg" class="continue-img" />
+                </div>
+                <span class="continue-wrap-head">Chris Pratt</span>
+                <span class="continue-wrap-text">Peter Quill / Star-Lord</span>
+            </div>
+            <div class="continue-wrap">
+                <div class="continue-item">
+                    <img src="./img/movie2.jpg" class="continue-img" />
+                </div>
+                <span class="continue-wrap-head">Zoe Saldana</span>
+                <span class="continue-wrap-text">Gamora</span>
+            </div>
+            <div class="continue-wrap">
+                <div class="continue-item">
+                    <img src="./img/movie3.jpg" class="continue-img" />
+                </div>
+                <span class="continue-wrap-head">Karen Gillan</span>
+                <span class="continue-wrap-text">Nebula</span>
+            </div>
+            <div class="continue-wrap">
+                <div class="continue-item">
+                    <img src="./img/movie4.jpg" class="continue-img" />
+                </div>
+                <span class="continue-wrap-head">Dave Bautista</span>
+                <span class="continue-wrap-text">Drax</span>
+            </div>
+            <div class="continue-wrap">
+                <div class="continue-item">
+                    <img src="./img/movie5.jpg" class="continue-img" />
+                </div>
+                <span class="continue-wrap-head">Vin Diesel</span>
+                <span class="continue-wrap-text">Baby Groot (voice)</span>
+            </div>
+            <div class="continue-wrap">
+                <div class="continue-item">
+                    <img src="./img/movie6.jpg" class="continue-img" />
+                </div>
+                <span class="continue-wrap-head">Bradley Cooper</span>
+                <span class="continue-wrap-text">Rocket (voice)</span>
             </div>
         </div>
     </div>

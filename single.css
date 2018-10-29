@@ -12,7 +12,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: linear-gradient(to bottom, rgba(3, 5, 11, 0.2), rgba(3, 5, 11, 0.9));
+    background-image: linear-gradient(to bottom, rgba(3, 5, 11, 0.7), rgba(3, 5, 11, 0.8), rgba(3, 5, 11, 0.95));
 }
 
 .single {
@@ -25,8 +25,161 @@
     height: 100%;
 }
 
-.single-box img {
+.single-row {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.single-row-child{
+    display: flex;
+    width: 100%;
+}
+
+
+.single-box {
+    position: relative;
+    width: max-content;
+}
+
+.single-box-img {
     width: 220px;
     height: 326px;
-    position: relative;
+}
+
+
+.single-col {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7rem;
+}
+
+.single-col-heading {
+    font-size: 43px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.single-tag-row {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.tag-btn {
+    border-radius: 1.4rem;
+    outline: 0;
+    border: 0;
+    padding: .5rem 1.5rem;
+    background: var(--dark2);
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.tag-btn:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+
+.single-detail-row {
+    display: flex;
+    margin-bottom: 2.5rem;
+}
+
+.single-detail-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.single-detail-col:not(:last-child) {
+    margin-right: 3rem;
+}
+
+.single-detail-head {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: rgba(173, 183, 255, 0.38);
+    margin-bottom: .3rem;
+}
+
+.single-detail-text {
+    font-size: 19px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.single-desc {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+.single-detail-light {
+    font-size: 17px;
+    color: #fff;
+    margin-top: 2px;
+}
+
+.single-settings {
+    display: flex;
+    flex-direction: column;
+}
+
+.single-settings-head {
+    font-size: 14px;
+    margin-bottom: 3px;
+    font-weight: 600;
+}
+
+.single-settings-text {
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.single-settings-highlight {
+    color: var(--blue);
+}
+
+
+.action-col {
+    display: flex;
+    flex-direction: column;
+    background: rgba(3, 5, 11, 0.7);
+    border-radius: 3px;
+    padding: .8rem 2.5rem .8rem 2rem;
+    align-self: flex-end;
+    margin-left: auto;
+    margin-right: 8rem;
+}
+
+.action-col-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 1rem 0;
+    align-items: center;
+    cursor: pointer;
+}
+
+.action-icon {
+    height: 12px;
+    width: auto;
+}
+
+.action-darker {
+    color: rgba(244, 244, 244, .8);
+    font-weight: 400;
+    margin-left: .7rem;
+}
+
+.server-select {
+    margin-right: .5rem;
+}
+
+.server-row {
+    display: flex;
+    align-items: center;
 }

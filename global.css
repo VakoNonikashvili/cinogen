@@ -36,3 +36,54 @@
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     background-color: #4151f4;
 }
+
+
+.player-container {
+    width: 71px;
+    height: 71px;
+    background: rgba(255, 255, 255, 0.1);
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+
+.player-icon-box {
+    width: 55px;
+    height: 55px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    position: relative;
+}
+
+.player-icon-box img {
+    height: 20px;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+}
+
+.single-item-player {
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.single-item-player .player-icon-box img {
+    height: 25px;
+    left: 58%;
+}
