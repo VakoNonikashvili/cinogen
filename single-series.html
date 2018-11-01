@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./header.css" />
+    <link rel="stylesheet" href="./single.css" />
+    <link rel="stylesheet" href="./frontpage.css" />
+    <title>Cineplex</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container between">
+            <h1>CinoGen</h1>
+            <div class="header-row">
+                <button class="header-btn">Get premium</button>
+                <img src="./icons/mail.svg" class="header-icon-ml" />
+                <img src="./icons/bell.svg" class="header-icon" />
+                <img src="./icons/user.svg" class="header-icon" />
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container between">
+            <div class="nav-row">
+                <div class="nav-row-item nav-active-item">
+                    <img src="./icons/movies-icon.png" />
+                    <span class="nav-row-text">Movies</span>
+                </div>
+                <div class="nav-row-item">
+                    <img src="./icons/tv-icon.png" />
+                    <span class="nav-row-text">TV Series</span>
+                </div>
+                <div class="nav-row-item">
+                    <img src="./icons/collections.svg" />
+                    <span class="nav-row-text">Collections</span>
+                </div>
+            </div>
+            <div class="nav-search">
+                <input class="nav-search-input" type="text" placeholder="Search" />
+                <img src="./icons/search.png" />
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="bg-img bg-img-series">
+        <div class="single">
+            <div class="container single-row">
+                <div class="single-row-child mt-auto">
+                    <div class="single-box">
+                        <img src="./img/anime-small.jpg" class="single-box-img" />
+                        <div class="player-container single-item-player">
+                            <div class="player-icon-box">
+                                <img src="./icons/play.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-col">
+                        <h2 class="single-col-heading">Tom Clancy’s Jack Rayn</h2>
+                        <div class="single-tag-row">
+                            <button class="tag-btn">Drama</button>
+                            <button class="tag-btn">Action</button>
+                            <button class="tag-btn">Thriller</button>
+                        </div>
+                        <div class="single-detail-row">
+                            <div class="single-detail-col">
+                                <span class="single-detail-head">Runtime</span>
+                                <span class="single-detail-text">58m</span>
+                            </div>
+                            <div class="single-detail-col">
+                                <span class="single-detail-head">Release year</span>
+                                <span class="single-detail-text">2018</span>
+                            </div>
+                            <div class="single-detail-col">
+                                <span class="single-detail-head">Rated</span>
+                                <span class="single-detail-text">PG-13</span>
+                            </div>
+                            <div class="single-detail-col">
+                                <span class="single-detail-head">IMDB</span>
+                                <span class="single-detail-text">8.3</span>
+                            </div>
+                        </div>
+                        <div class="single-desc">
+                            <span class="single-detail-head">STORYLINE</span>
+                            <span class="single-detail-light">When CIA analyst Jack Ryan stumbles upon a suspicious series of<br />bank transfers his search for answers pulls him from the safety…</span>
+                        </div>
+                        <div class="single-settings">
+                            <span class="single-settings-head">Try another video player (these links open in almost-fullscreen by default):</span>
+                            <span class="single-settings-text">1. New video player (supports Chromecast on Chrome for Mac/Windows, AirPlay on Safari) | <span class="single-settings-highlight">720p</span></span>
+                            <span class="single-settings-text">2. Native video player (supports AirPlay and PIP on Safari) | <span class="single-settings-highlight">720p</span></span>
+                        </div>
+                    </div>
+                    <div class="action-col">
+                        <div class="action-col-item">
+                            <span>Marked as watched</span>
+                            <img src="./icons/checked-gray.svg" class="action-icon" />
+                        </div>
+                        <div class="action-col-item">
+                            <span>Add to collection</span>
+                            <img src="./icons/add.svg" class="action-icon" />
+                        </div>
+                        <div class="action-col-item">
+                            <span>Download</span>
+                            <span class="action-darker">720p</span>
+                            <span class="action-darker">1080p</span>
+                        </div>
+                        <div class="action-col-item">
+                            <span>Upload subtitle .srt</span>
+                            <img src="./icons/subtitle.svg" class="action-icon"/>
+                        </div>
+                        <div class="action-col-item">
+                            <div class="server-row">
+                                <span class="server-select">Select server</span>
+                                <img src="./icons/server.svg" class="action-icon"/>
+                            </div>
+                            <img src="./icons/chevron-down.svg" class="action-icon" />
+                        </div>
+                    </div>
+                </div>
+                <div class="single-seasons">
+                    <div class="season-row">
+                        <span class="season-item season-active">Season 1</span>
+                        <span class="season-item">Season 2</span>
+                        <span class="season-item">Season 3</span>
+                        <span class="season-item">Season 4</span>
+                        <span class="season-item">Season 5</span>
+                        <span class="season-item">Season 6</span>
+                        <span class="season-item">Season 7</span>
+                        <span class="season-item">Season 8</span>
+                        <span class="season-item">Season 9</span>
+                        <span class="season-item">Season 10</span>
+                        <span class="season-item">Season 11</span>
+                    </div>
+                    <div class="big-progress">
+                        <div class="big-progress-inside"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="episodes">
+            <div class="episodes-header">
+                <h2>Episodes</h2>
+                <div class="ep-autoplay">
+                    <p>Autoplay</p>
+                    <label class="switch-fat">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="episodes-grid">
+                <div class="ep-grid-item">
+                    <div class="episode-bg bg-1 bg-overlayed"></div>
+                    <div class="ep-desc">
+                        <img src="./icons/checked-white.svg" />
+                        <div class="ep-col">
+                            <span class="ep-title">Pilot</span>
+                            <span class="ep-info">S1 E1</span>
+                            <span class="ep-date">2018-08-31</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ep-grid-item">
+                    <div class="episode-bg bg-2 bg-selected"></div>
+                    <div class="ep-desc">
+                        <img src="./icons/checked-white.svg" />
+                        <div class="ep-col">
+                            <span class="ep-title ep-title-active">French Connection</span>
+                            <span class="ep-info ep-info-active">S1 E2</span>
+                            <span class="ep-date ep-date-active">2018-08-31</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ep-grid-item">
+                    <div class="episode-bg bg-3 bg-overlayed">
+                        <div class="marked">
+                            <span>Mark as watched</span>
+                            <img src="./icons/checked-gray.svg" />
+                        </div>
+                    </div>
+                    <div class="ep-desc">
+                        <img src="./icons/checked-white.svg" />
+                        <div class="ep-col">
+                            <span class="ep-title">Black 22</span>
+                            <span class="ep-info">S1 E3</span>
+                            <span class="ep-date">2018-08-31</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ep-grid-item">
+                    <div class="episode-bg bg-4 bg-overlayed"></div>
+                    <div class="ep-desc">
+                        <img src="./icons/checked-white.svg" />
+                        <div class="ep-col">
+                            <span class="ep-title">The wolf</span>
+                            <span class="ep-info">S1 E4</span>
+                            <span class="ep-date">2018-08-31</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ep-grid-item">
+                    <div class="episode-bg bg-5 bg-overlayed"></div>
+                    <div class="ep-desc">
+                        <img src="./icons/checked-white.svg" />
+                        <div class="ep-col">
+                            <span class="ep-title">End of Honor</span>
+                            <span class="ep-info">S1 E5</span>
+                            <span class="ep-date">2018-08-31</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ep-grid-item">
+                    <div class="episode-bg bg-6 bg-overlayed"></div>
+                    <div class="ep-desc">
+                        <div class="ep-col">
+                            <span class="ep-title">Sources and Metho…</span>
+                            <span class="ep-info">S1 E6</span>
+                            <span class="ep-date">2018-08-31</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ep-grid-item">
+                    <div class="episode-bg bg-7 bg-overlayed"></div>
+                    <div class="ep-desc">
+                        <div class="ep-col">
+                            <span class="ep-title">French Connection</span>
+                            <span class="ep-info">S1 E7</span>
+                            <span class="ep-date">2018-08-31</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ep-grid-item">
+                    <div class="episode-bg bg-14 bg-overlayed"></div>
+                    <div class="ep-desc">
+                        <div class="ep-col">
+                            <span class="ep-title">Pilot</span>
+                            <span class="ep-info">S1 E1</span>
+                            <span class="ep-date">2018-08-31</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ep-grid-item">
+                    <div class="episode-bg bg-13 bg-overlayed"></div>
+                    <div class="ep-desc">
+                        <div class="ep-col">
+                            <span class="ep-title">French Connection</span>
+                            <span class="ep-info">S1 E2</span>
+                            <span class="ep-date">2018-08-31</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ep-grid-item">
+                    <div class="episode-bg bg-12 bg-overlayed"></div>
+                    <div class="ep-desc">
+                        <div class="ep-col">
+                            <span class="ep-title">Black 22</span>
+                            <span class="ep-info">S1 E3</span>
+                            <span class="ep-date">2018-08-31</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ep-grid-item">
+                    <div class="episode-bg bg-11 bg-overlayed"></div>
+                    <div class="ep-desc">
+                        <div class="ep-col">
+                            <span class="ep-title">The wolf</span>
+                            <span class="ep-info">S1 E4</span>
+                            <span class="ep-date">2018-08-31</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ep-grid-item">
+                    <div class="episode-bg bg-10 bg-overlayed"></div>
+                    <div class="ep-desc">
+                        <div class="ep-col">
+                            <span class="ep-title">End of Honor</span>
+                            <span class="ep-info">S1 E5</span>
+                            <span class="ep-date">2018-08-31</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ep-grid-item">
+                    <div class="episode-bg bg-9 bg-overlayed"></div>
+                    <div class="ep-desc">
+                        <div class="ep-col">
+                            <span class="ep-title">Black 22</span>
+                            <span class="ep-info">S1 E6</span>
+                            <span class="ep-date">2018-08-31</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ep-grid-item">
+                    <div class="episode-bg bg-8 bg-overlayed"></div>
+                    <div class="ep-desc">
+                        <div class="ep-col">
+                            <span class="ep-title">French Connection</span>
+                            <span class="ep-info">S1 E7</span>
+                            <span class="ep-date">2018-08-31</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ep-grid-item">
+                    <div class="episode-bg bg-1 bg-overlayed"></div>
+                    <div class="ep-desc">
+                        <div class="ep-col">
+                            <span class="ep-title">Pilot</span>
+                            <span class="ep-info">S1 E1</span>
+                            <span class="ep-date">2018-08-31</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ep-grid-item">
+                    <div class="episode-bg bg-2 bg-overlayed"></div>
+                    <div class="ep-desc">
+                        <div class="ep-col">
+                            <span class="ep-title">French Connection</span>
+                            <span class="ep-info">S1 E2</span>
+                            <span class="ep-date">2018-08-31</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ep-grid-item">
+                    <div class="episode-bg bg-3 bg-overlayed"></div>
+                    <div class="ep-desc">
+                        <div class="ep-col">
+                            <span class="ep-title">Black 22</span>
+                            <span class="ep-info">S1 E3</span>
+                            <span class="ep-date">2018-08-31</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ep-grid-item">
+                    <div class="episode-bg bg-4 bg-overlayed"></div>
+                    <div class="ep-desc">
+                        <div class="ep-col">
+                            <span class="ep-title">The wolf</span>
+                            <span class="ep-info">S1 E4</span>
+                            <span class="ep-date">2018-08-31</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ep-grid-item">
+                    <div class="episode-bg bg-5 bg-overlayed"></div>
+                    <div class="ep-desc">
+                        <div class="ep-col">
+                            <span class="ep-title">End of Honor</span>
+                            <span class="ep-info">S1 E5</span>
+                            <span class="ep-date">2018-08-31</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ep-grid-item">
+                    <div class="episode-bg bg-6 bg-overlayed">
+                        <div class="blue-pill">New episode</div>
+                    </div>
+                    <div class="ep-desc">
+                        <div class="ep-col">
+                            <span class="ep-title">Black 22</span>
+                            <span class="ep-info">S1 E6</span>
+                            <span class="ep-date">2018-08-31</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ep-grid-item">
+                    <div class="episode-bg bg-7 bg-overlayed">
+                        <div class="blue-pill">New episode</div>
+                    </div>
+                    <div class="ep-desc">
+                        <div class="ep-col">
+                            <span class="ep-title">French Connection</span>
+                            <span class="ep-info">S1 E7</span>
+                            <span class="ep-date">2018-08-31</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

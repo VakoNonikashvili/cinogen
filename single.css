@@ -5,6 +5,10 @@
     background-size: cover;
 }
 
+.bg-img-series {
+    background: url('./img/anime-big.jpg') top center no-repeat;
+}
+
 .bg-img:before {
     content: '';
     position: absolute;
@@ -27,6 +31,7 @@
 
 .single-row {
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
     align-items: center;
@@ -182,4 +187,282 @@
 .server-row {
     display: flex;
     align-items: center;
+}
+
+
+.mt-auto {
+    margin-top: auto;
+}
+
+.single-seasons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: 3rem;
+}
+
+.season-row {
+    display: flex;
+}
+
+.season-item {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    padding: .8rem 2rem;
+    cursor: pointer;;
+}
+
+.season-active {
+    border-radius: 1.8rem;
+    background-color: #222832;
+}
+
+.season-item:not(:last-child) {
+    margin-right: 2.5rem;
+}
+
+.episodes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding-bottom: 8rem;
+}
+
+.episodes-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.episodes-header h2 {
+    font-size: 19px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.ep-autoplay {
+    display: flex;
+    align-items: center;
+}
+
+.ep-autoplay p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ebebeb;
+    margin-right: 1.2rem;
+}
+
+.episodes-grid {
+    display: grid;
+    /* justify-content: space-between; */
+    align-content: start;
+    grid-template-columns: repeat(auto-fit, 184px);
+    grid-gap: 5rem 1.2rem;
+    margin-top: 2rem;
+}
+
+.ep-grid-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.episode-bg {
+    padding-top: 56%;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    position: relative;
+}
+
+
+.episode-bg::after {
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+.bg-1::after {
+    background: url('./img/ser1.jpg') top center no-repeat;
+}
+
+.bg-2::after {
+    background: url('./img/ser2.jpg') top center no-repeat;
+}
+
+.bg-3::after {
+    background: url('./img/ser3.jpg') top center no-repeat;
+}
+
+.bg-4::after {
+    background: url('./img/ser4.jpg') top center no-repeat;
+}
+
+.bg-5::after {
+    background: url('./img/ser5.jpg') top center no-repeat;
+}
+
+.bg-6::after {
+    background: url('./img/ser6.jpg') top center no-repeat;
+}
+
+.bg-7::after {
+    background: url('./img/ser7.jpg') top center no-repeat;
+}
+.bg-8::after {
+    background: url('./img/ser8.jpg') top center no-repeat;
+}
+
+.bg-9::after {
+    background: url('./img/ser9.jpg') top center no-repeat;
+}
+.bg-10::after {
+    background: url('./img/ser10.jpg') top center no-repeat;
+}
+.bg-11::after {
+    background: url('./img/ser11.jpg') top center no-repeat;
+}
+.bg-12::after {
+    background: url('./img/ser12.jpg') top center no-repeat;
+}
+.bg-13::after {
+    background: url('./img/ser13.jpg') top center no-repeat;
+}
+.bg-14::after {
+    background: url('./img/ser14.jpg') top center no-repeat;
+}
+
+.ep-desc {
+    display: flex;
+    margin-top: .7rem;
+    align-items: flex-start;
+}
+
+.ep-desc img {
+    width: 13px;
+    height: auto;
+    margin-top: 3px;
+    margin-right: 1.2rem;
+}
+
+.ep-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.ep-title {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.ep-title-active {
+    color: #fff;
+}
+
+.ep-info,
+.ep-date {
+    color: rgba(112,112,112,0.6);
+    font-size: 15px;
+    margin-top: 3px;
+}
+
+.ep-info-active,
+.ep-date-active {
+    color: rgb(112,112,112);
+}
+
+.bg-overlayed::after {
+    opacity: .6;
+}
+
+.bg-selected {
+    border: 2px solid var(--blue);
+}
+
+.marked {
+    border-radius: 17.5px;
+    background-color: #222832;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem 1.5rem;
+    width: fit-content;
+}
+
+.marked img {
+    width: 12px;
+    height: auto;
+    margin-left: .8rem;
+}
+
+.switch-fat {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 15px;
+    border-radius: 7px;
+    background-color: #ffffff;
+}
+
+.switch-fat input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    width: 19px;
+    height: 19px;
+    left: -1px;
+    top: -2px;
+    background-color: #5248dc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #fff;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(13px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
