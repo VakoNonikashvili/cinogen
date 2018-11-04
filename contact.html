@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./header.css" />
+    <link rel="stylesheet" href="./contact.css" />
+    <title>Cineplex</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container between">
+            <h1>CinoGen</h1>
+            <div class="header-row">
+                <button class="header-btn">Get premium</button>
+                <img src="./icons/mail.svg" class="header-icon-ml" />
+                <img src="./icons/bell.svg" class="header-icon" />
+                <img src="./icons/user.svg" class="header-icon" />
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container between">
+            <div class="nav-row">
+                <div class="nav-row-item">
+                    <img src="./icons/movies-icon.png" />
+                    <span class="nav-row-text">Movies</span>
+                </div>
+                <div class="nav-row-item nav-active-item">
+                    <img src="./icons/tv-icon.png" />
+                    <span class="nav-row-text">TV Series</span>
+                </div>
+                <div class="nav-row-item">
+                    <img src="./icons/collections.svg" />
+                    <span class="nav-row-text">Collections</span>
+                </div>
+            </div>
+            <div class="nav-search">
+                <input class="nav-search-input" type="text" placeholder="Search" />
+                <img src="./icons/search.png" />
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="contact-col">
+            <h2 class="contact-heading">Contact</h2>
+            <span class="contact-subheading">Submit a support ticket by filling in the form below</span>
+            <label for="name">Your name</label>
+            <input class="main-input main-input-name" type="text" placeholder="Name" id="name" />
+            <label for="email">Your email address</label>
+            <input class="main-input main-input-email" type="text" placeholder="Email" id="email" />
+            <label for="email">Subject</label>
+            <div class="select-container">
+                <select>
+                    <option>General support</option>
+                    <option>Terms and privacy</option>
+                    <option>Contact us</option>
+                </select>
+                <img src="./icons/down-arrow.svg" />
+            </div>
+            <label for="message">Message</label>
+            <textarea class="main-input main-input-chat" type="text" placeholder="Your message" id="message" rows="7" ></textarea>
+            <button class="contact-button">Request</button>
+        </div>
+    </div>
+
+
+</body>
+</html>

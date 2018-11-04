@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./header.css" />
+    <link rel="stylesheet" href="./settings.css" />
+    <title>Cineplex</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container between">
+            <h1>CinoGen</h1>
+            <div class="header-row">
+                <button class="header-btn">Get premium</button>
+                <img src="./icons/mail.svg" class="header-icon-ml" />
+                <img src="./icons/bell.svg" class="header-icon" />
+                <img src="./icons/user.svg" class="header-icon" />
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container between">
+            <div class="nav-row">
+                <div class="nav-row-item">
+                    <img src="./icons/movies-icon.png" />
+                    <span class="nav-row-text">Movies</span>
+                </div>
+                <div class="nav-row-item nav-active-item">
+                    <img src="./icons/tv-icon.png" />
+                    <span class="nav-row-text">TV Series</span>
+                </div>
+                <div class="nav-row-item">
+                    <img src="./icons/collections.svg" />
+                    <span class="nav-row-text">Collections</span>
+                </div>
+            </div>
+            <div class="nav-search">
+                <input class="nav-search-input" type="text" placeholder="Search" />
+                <img src="./icons/search.png" />
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="sub-between">
+            <div class="sub-nav">
+                <span class="sub-nav-item">Referrals</span>
+                <span class="sub-nav-item subnav-active">Settings</span>
+                <span class="sub-nav-item">Premium</span>
+            </div>
+        </div>
+        <div class="divider"></div>
+    </div>
+
+    <div class="container">
+        <div class="settings-row">
+            <div class="settings-col">
+                <h6 class="settings-head">Change email</h6>
+                <label for="name">Your email address</label>
+                <input class="main-input main-input-email" type="text" id="email" value="name@email.com" />
+                <label for="psw">Current password</label>
+                <input class="main-input main-input-password" type="password" id="psw" value="1234567" />
+                <button class="save-button">Save changes</button>
+            </div>
+            <div class="settings-col col-right">
+                <h6 class="settings-head">Change password</h6>
+                <label for="current">Current password</label>
+                <input class="main-input main-input-password" type="password" id="current"  />
+                <label for="new">New password</label>
+                <input class="main-input main-input-password" type="password" id="new"  />
+                <label for="conf">Confirm new password</label>
+                <input class="main-input main-input-password" type="password" id="conf" />
+                <button class="save-button">Save changes</button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

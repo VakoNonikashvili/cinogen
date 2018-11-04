@@ -1,0 +1,123 @@
+.contact-col {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    padding-bottom: 6rem;
+}
+
+.main-input {
+    outline: 0;
+    border: 0;
+    border-radius: 3px;
+    background: #fff;
+    max-width: 48rem;
+    width: 100%;
+    padding: 1rem 3.7rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    margin-top: .6rem;
+}
+
+.main-input-name {
+    background-image: url('./icons/contact-name.svg');
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: 1.1rem center;
+}
+
+.main-input-chat {
+    background-image: url('./icons/contact-chat.svg');
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: 1.1rem 1.2rem;
+}
+
+.main-input-email {
+    background-image: url('./icons/contact-email.svg');
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: 1.1rem center;
+}
+ 
+.main-input::-webkit-input-placeholder {
+    color: #b8b8b8
+}
+.main-input:-ms-input-placeholder {
+    color: #b8b8b8
+}
+.main-input::-ms-input-placeholder {
+    color: #b8b8b8
+}
+.main-input::placeholder {
+    color: #b8b8b8
+}
+
+label {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+label:not(:first-of-type) {
+    margin-top: 1.7rem;
+}
+
+.contact-heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.contact-subheading {
+    font-size: 1.5rem;
+    color: #ebebeb;
+    margin-top: .5rem;
+    margin-bottom: 4.5rem;
+}
+
+
+.select-container {
+    position: relative;
+    width: 100%;
+    max-width: 25rem;
+}
+
+.select-container img {
+    position: absolute;
+    top: 60%;
+    right: 2rem;
+    transform: translateY(-50%);
+    width: 10px;
+    height: auto;
+    pointer-events: none;
+}
+
+.select-container select {
+    font-size: 1.6rem;
+    color: #fff;
+    background: var(--dark2);
+    border: 0;
+    outline: 0;
+    padding: 1.1rem 2rem;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-progress-appearance: none;
+    width: 100%;
+    margin-top: .6rem;
+}
+
+
+.contact-button {
+    background: var(--green);
+    outline: 0;
+    border: 0;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 2.3rem;
+    padding: .8rem 4.2rem;
+    align-self: flex-start;
+    margin-top: 2rem;
+    cursor: pointer;
+}

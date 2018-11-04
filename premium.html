@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./header.css" />
+    <link rel="stylesheet" href="./premium.css" />
+    <title>Cineplex</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container between">
+            <h1>CinoGen</h1>
+            <div class="header-row">
+                <button class="header-btn">Get premium</button>
+                <img src="./icons/mail.svg" class="header-icon-ml" />
+                <img src="./icons/bell.svg" class="header-icon" />
+                <img src="./icons/user.svg" class="header-icon" />
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container between">
+            <div class="nav-row">
+                <div class="nav-row-item">
+                    <img src="./icons/movies-icon.png" />
+                    <span class="nav-row-text">Movies</span>
+                </div>
+                <div class="nav-row-item nav-active-item">
+                    <img src="./icons/tv-icon.png" />
+                    <span class="nav-row-text">TV Series</span>
+                </div>
+                <div class="nav-row-item">
+                    <img src="./icons/collections.svg" />
+                    <span class="nav-row-text">Collections</span>
+                </div>
+            </div>
+            <div class="nav-search">
+                <input class="nav-search-input" type="text" placeholder="Search" />
+                <img src="./icons/search.png" />
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="sub-between">
+            <div class="sub-nav">
+                <span class="sub-nav-item">Referrals</span>
+                <span class="sub-nav-item">Settings</span>
+                <span class="sub-nav-item subnav-active">Premium</span>
+            </div>
+        </div>
+        <div class="divider"></div>
+    </div>
+
+    <div class="container">
+        <h2 class="premium-heading">Premium</h2>
+        <h2 class="premium-heading pink">Access to unlimited movies and TV shows!</h2>
+        <span class="premium-ending">Premium user with <strong>91 days and 13 hours</strong> remaining</span>
+        <div class="premium-row">
+            <div class="premium-col">
+                <span class="item-head">A premium viewing experience</span>
+                <span class="item-text">Start enjoying thousands of movies and TV shows. With an ever growing movie and TV show database you&apos;ll never run out of things to watch. We offer the most, highest quality and latest content that&apos;s available on the market. Watch your favorite movies online before they&apos;re in theaters!</span>
+                <span class="item-head">Choose a package that's right for you</span>
+                <div class="choose-item choose-item-active">
+                    <span class="dot dot-active"></span>
+                    <span class="choose-text choose-text-active">30 Days</span>
+                    <span class="choose-text choose-text-active">$9.99</span>
+                </div>
+                <div class="choose-item">
+                    <span class="dot"></span>
+                    <span class="choose-text">90 Days</span>
+                    <span class="choose-text">$25.49</span>
+                    <span class="choose-text choose-item-auto">(15% Discount)</span>
+                </div>
+                <div class="choose-item">
+                    <span class="dot"></span>
+                    <span class="choose-text">180 Days</span>
+                    <span class="choose-text">$44.99</span>
+                    <span class="choose-text choose-item-auto">(25% Discount)</span>
+                </div>
+                <p class="small-text">Missing content? Send us a message and we can most likely add it.</p>
+                <p class="small-text">We listen to our customers and are always happy to help!</p>
+                <p class="bot-text">Cineplex.to provides a safe and secure payment environment. Enjoy!</p>
+            </div>
+            <div class="premium-col">
+                <span class="item-head">Get premium</span>
+                <span class="item-text">This charge will appear in your bank statement as: SOCIALPRO_NET. Please Do NOT Dispute. If you would like to cancel your Premium membership or change your Premium account plan details, please just contact us via email and we will take care of it right away</span>
+                <span class="payment-head">Secure payment</span>
+                <div class="payment-col">
+                    <label>Credit Card Number</label>
+                    <input class="main-input" type="text" placeholder="0000-0000-0000-0000" />
+                    <label>Expiry date</label>
+                    <div class="payment-row">
+                        <input class="main-input half" type="text" placeholder="Month" />
+                        <input class="main-input half" type="text" placeholder="Year" />
+                    </div>
+                    <label>Credit Card CVC</label>
+                    <input class="main-input cvc" type="text" placeholder="000" />
+                </div>
+                <button class="upgrade-button">Upgrade now</button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

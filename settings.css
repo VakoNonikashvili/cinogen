@@ -1,0 +1,78 @@
+.settings-row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    padding-bottom: 6rem;
+}
+
+.settings-col {
+    display: flex;
+    flex-direction: column;
+    max-width: 48rem;
+    width: 100%;
+}
+
+.col-right {
+    margin-left: 11rem;
+    max-width: 60rem;
+}
+
+
+.settings-head {
+    margin-bottom: 3.2rem;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+label {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+label:not(:first-of-type) {
+    margin-top: 1.7rem;
+}
+
+.main-input {
+    outline: 0;
+    border: 0;
+    border-radius: 3px;
+    background: #fff;
+    padding: 1rem 4rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    margin-top: .6rem;
+}
+
+.main-input-password {
+    background-image: url('./icons/key.svg');
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: 1.3rem center;
+}
+
+.main-input-email {
+    background-image: url('./icons/email.svg');
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: 1.3rem center;
+}
+
+
+.save-button {
+    background: var(--green);
+    outline: 0;
+    border: 0;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 2.3rem;
+    padding: .8rem 2.5rem;
+    align-self: flex-start;
+    margin-top: 2rem;
+    cursor: pointer;
+}

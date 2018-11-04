@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./header.css" />
     <link rel="stylesheet" href="./movies.css" />
     <link rel="stylesheet" href="./pagination.css" />
+    <link rel="stylesheet" href="./modal.css" />
     <title>Cineplex</title>
 </head>
 <body>
@@ -63,11 +64,14 @@
     </div>
 
 
+
+
+
 <div class="container grid-parent">
     <div class="grid">
         <div class="card">
             <div class="add-request">
-                <div class="add-box">
+                <div class="add-box" id="req-btn">
                     <img src="./icons/plus.svg" />
                 </div>
                 <span class="add-request-text">Request content</span>
@@ -128,6 +132,41 @@
         <div class="pagination-item">Next</div>
     </div>
 </div>
+
+
+<div class="modal" id="req">
+    <div class="modal-content">
+        <div class="close-modal" id="close-req"><img src="./icons/close.svg" /></div>
+            <span class="modal-head">Request content</span>
+            <span class="modal-text">Please visit the IMDB here : <span class="highlight">https://www.imdb.com/</span></span>
+            <span class="modal-text modal-text-second">Copy and Paste an IMDB-link in this format <span class="highlighted">http://www.imdb.com/title/tt0111161/</span></span>
+            <input class="modal-input input-iconed" placeholder="Enter Imdb link" />
+            <div class="modal-row">
+                <button class="modal-btn req-btn">Request</button>
+            </div>
+    </div>
+</div>
+<script>
+const modal = document.getElementById('req');
+const btn = document.getElementById("req-btn");
+const closer = document.getElementById("close-req");
+const cancel = document.getElementById("cancel-req");
+
+btn.onclick = function() {
+    modal.style.display = "flex";
+}
+
+closer.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+</script>
 
 
 

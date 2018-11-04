@@ -118,6 +118,7 @@
   border: solid 2px var(--blue);
   border-radius: 50%;
   background: transparent;
+  cursor: pointer;
 }
 
 .add-box img {
@@ -129,4 +130,90 @@
 .add-request-text {
   font-size: 15px;
   margin-top: 2.4rem;
+}
+
+
+.grid-head-group {
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.grid-head-group h2 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-right: 1.5rem;
+}
+
+.grid-head-icon {
+  width: 17px;
+  height: 17px;
+  background: var(--dark2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: .8rem;
+  cursor: pointer;
+}
+
+.grid-head-icon img {
+  width: 10px;
+  height: auto;
+  display: block;
+}
+
+.grid-head-group span {
+  color: #b8b8b8;
+  font-size: 13px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+
+
+.grid-collections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  grid-gap: 4.8rem 6rem;
+  margin-top: 5.7rem;
+  padding-bottom: 6rem;
+}
+
+.grid-collections-item {
+  display: grid;
+  grid-template-columns: repeat(15, 20px);
+  grid-template-rows: repeat(4, 50px);
+  overflow: hidden;
+}
+
+
+.grid-img-1 {
+  grid-area: 2 / 1 / 5 / 6;
+  width: 100%;
+}
+
+.grid-img-2 {
+  grid-area: 1 / 5 / 5 / 12;
+  width: 100%;
+  z-index: 3;
+}
+
+.grid-img-3 {
+  grid-area: 2 / 11 / 5 / 16;
+  width: 100%;
+}
+
+.collections-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.collections-group h6 {
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  color: #ebebeb;
+  margin-top: 2.7rem;
+  cursor: pointer;
 }
