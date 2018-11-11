@@ -47,6 +47,23 @@
     overflow: hidden;
 }
 
+@media only screen and (max-width: 1050px) {
+    .this-week-item {
+        width: 50%;
+    }
+
+    .this-week {
+        overflow: hidden;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .this-week-item {
+        width: 100%;
+    }
+}
+
 .this-week-img {
     width: 100%;
     height: auto;
@@ -131,15 +148,26 @@
     margin-right: 10px;
 }
 
+
 .view-all-text {
     margin-right: 48px;
 }
 
+@media only screen and (max-width: 600px) {
+    .view-box {
+        display: none;
+    }
+
+    .view-all-text {
+        margin-right: 0;
+    }
+}
 
 
 .continue {
     display: flex;
     margin-top: 20px;
+    overflow: hidden;
 }
 
 .continue-item {
@@ -150,6 +178,13 @@
     overflow: hidden;
     box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.5);
 }
+
+@media only screen and (max-width: 600px) {
+    .continue-item {
+        width: 92px;
+        height: 138px;
+    }
+  }
 
 .continue-wrap {
     display: flex;
@@ -260,9 +295,15 @@
     position: absolute;
     left: 10px;
     bottom: 15px;
-    max-width: 162px;;
+    max-width: 162px;
     width: 100%;
 }
+
+@media only screen and (max-width: 600px) {
+    .progress {
+        max-width: 80%;
+    }
+  }
 
 .progress-inside {
     background-image: linear-gradient(to left, #4529eb, #5d50ff);

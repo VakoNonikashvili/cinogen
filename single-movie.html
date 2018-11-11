@@ -48,10 +48,48 @@
     </nav>
 
 
+    <header class="mobile-header">
+        <img src="./icons/search-white.svg" class="mobile-search-icon" />
+        <span>CinoGen</span>
+        <img src="./icons/menu.svg" class="mobile-menu-icon" id="mobile-btn" />
+    </header>
+
+    <nav class="mobile-nav" id="mobile-menu">
+        <div class="mobile-nav-item  mobile-mt">
+            <img src="./icons/movies-icon.png" />
+            <span class="nav-row-text">Movies</span>
+        </div>
+        <div class="mobile-nav-item">
+            <img src="./icons/tv-icon.png" />
+            <span class="nav-row-text">TV Series</span>
+        </div>
+        <div class="mobile-nav-item">
+            <img src="./icons/collections.svg" />
+            <span class="nav-row-text">Collections</span>
+        </div>
+        <span class="mobile-account">My account</span>
+        <img src="./icons/close-white.svg" class="mobile-close-icon" id="mobile-closer" />
+    </nav>
+
+    <script>
+        const btn = document.getElementById('mobile-btn');
+        const menu = document.getElementById("mobile-menu");
+        const closer = document.getElementById("mobile-closer");
+        
+        btn.onclick = function() {
+            menu.style.display = "flex";
+        }
+        
+        closer.onclick = function() {
+            menu.style.display = "none";
+        }
+    </script>
+
+
     <div class="bg-img">
         <div class="single">
-            <div class="container single-row">
-                <div class="single-row-child">
+            <div class="container single-row single-movie-parent">
+                <div class="single-row-child single-movie-resp">
                     <div class="single-box">
                         <img src="./img/galaxy-small.jpg" class="single-box-img" />
                         <div class="player-container single-item-player">
@@ -86,7 +124,7 @@
                         </div>
                         <div class="single-desc">
                             <span class="single-detail-head">STORYLINE</span>
-                            <span class="single-detail-light">A group of intergalactic criminals are forced to work together to<br />stop a fanatical warrior from taking control of the universe.</span>
+                            <span class="single-detail-light">A group of intergalactic criminals are forced to work together to<br class="br-none-500" />stop a fanatical warrior from taking control of the universe.</span>
                         </div>
                         <div class="single-settings">
                             <span class="single-settings-head">Try another video player (these links open in almost-fullscreen by default):</span>
@@ -123,7 +161,7 @@
     </div>
 
 
-    <div class="container ending">
+    <div class="container ending movie-bottom-slider">
         <h2 class="front-heading front-heading-top">Cast</h2>
         <div class="between">
             <h2 class="front-heading pink">overview</h2>
@@ -150,7 +188,7 @@
                     <img src="./img/movie1.jpg" class="continue-img" />
                 </div>
                 <span class="continue-wrap-head">Chris Pratt</span>
-                <span class="continue-wrap-text">Peter Quill / Star-Lord</span>
+                <span class="continue-wrap-text">Peter Quill</span>
             </div>
             <div class="continue-wrap">
                 <div class="continue-item">

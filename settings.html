@@ -46,6 +46,44 @@
         </div>
     </nav>
 
+
+    <header class="mobile-header">
+        <img src="./icons/search-white.svg" class="mobile-search-icon" />
+        <span>CinoGen</span>
+        <img src="./icons/menu.svg" class="mobile-menu-icon" id="mobile-btn" />
+    </header>
+
+    <nav class="mobile-nav" id="mobile-menu">
+        <div class="mobile-nav-item  mobile-mt">
+            <img src="./icons/movies-icon.png" />
+            <span class="nav-row-text">Movies</span>
+        </div>
+        <div class="mobile-nav-item">
+            <img src="./icons/tv-icon.png" />
+            <span class="nav-row-text">TV Series</span>
+        </div>
+        <div class="mobile-nav-item">
+            <img src="./icons/collections.svg" />
+            <span class="nav-row-text">Collections</span>
+        </div>
+        <span class="mobile-account">My account</span>
+        <img src="./icons/close-white.svg" class="mobile-close-icon" id="mobile-closer" />
+    </nav>
+
+    <script>
+        const btn = document.getElementById('mobile-btn');
+        const menu = document.getElementById("mobile-menu");
+        const closer = document.getElementById("mobile-closer");
+        
+        btn.onclick = function() {
+            menu.style.display = "flex";
+        }
+        
+        closer.onclick = function() {
+            menu.style.display = "none";
+        }
+    </script>
+
     <div class="container">
         <div class="sub-between">
             <div class="sub-nav">

@@ -37,6 +37,12 @@
     z-index: 55;
 }
 
+@media only screen and (max-width: 620px) {
+    .blue-pill {
+        left: 0;
+        font-size: 11px;
+    }
+}
 
 .player-container {
     width: 71px;

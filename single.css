@@ -201,6 +201,7 @@
     width: 100%;
     margin-top: auto;
     margin-bottom: 3rem;
+    overflow: hidden;
 }
 
 .season-row {
@@ -466,4 +467,138 @@ input:checked + .slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+
+
+
+@media only screen and (max-width: 1120px) {
+    .single-movie-resp {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    .single-movie-parent {
+        justify-content: flex-start;
+    }
+
+    .single-col {
+        margin-left: 0;
+        align-items: center;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .action-col {
+        margin-left: unset;
+        margin-right: unset;
+        align-self: center;
+        background: var(--dark);
+        margin-top: 2rem;
+    }
+
+    .movie-bottom-slider {
+        margin-top: 28rem;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .single-col-heading {
+        font-size: 22px;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .single-settings {
+        display: none;
+    }
+
+    .single-desc {
+        margin-bottom: 0;
+    }
+    .movie-bottom-slider {
+        margin-top: 12rem;
+    }
+
+    .single-box-img {
+        width: 168px;
+        height: 249px;
+    }
+
+    .br-none-500 {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 350px) {
+    .movie-bottom-slider {
+        margin-top: 15rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 1225px) {
+    .single-series-resp {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    .single-series-parent {
+        justify-content: flex-start;
+    }
+
+    .single-series-resp .single-col {
+        margin-left: 0;
+        align-items: center;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .single-series-resp .action-col {
+        margin-left: unset;
+        margin-right: unset;
+        align-self: center;
+        background: var(--dark);
+        margin-top: 2rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .episodes {
+        margin-top: 40rem;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .episodes {
+        margin-top: 22rem;
+    }
+}
+
+
+@media only screen and (max-width: 425px) {
+    .episodes-grid {
+        grid-template-columns: repeat(auto-fit, 51%);
+    }
+    .ep-grid-item {
+        flex-direction: row;
+    }
+
+    .ep-desc {
+        margin-left: 1.2rem;
+        margin-top: 0;
+    }
+
+    .ep-title {
+        font-size: 15px;
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
