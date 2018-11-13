@@ -15,7 +15,7 @@
         <div class="container between">
             <h1>CinoGen</h1>
             <div class="header-row">
-                <button class="header-btn">Get premium</button>
+                <button class="header-btn" onclick="goToPremium()">Get premium</button>
                 <img src="./icons/mail.svg" class="header-icon-ml" />
                 <img src="./icons/bell.svg" class="header-icon" />
                 <img src="./icons/user.svg" class="header-icon" />
@@ -26,15 +26,15 @@
     <nav class="main-nav">
         <div class="container between">
             <div class="nav-row">
-                <div class="nav-row-item">
+                <div class="nav-row-item" onclick="goToMovies()">
                     <img src="./icons/movies-icon.png" />
                     <span class="nav-row-text">Movies</span>
                 </div>
-                <div class="nav-row-item">
+                <div class="nav-row-item" onclick="goToMovies()">
                     <img src="./icons/tv-icon.png" />
                     <span class="nav-row-text">TV Series</span>
                 </div>
-                <div class="nav-row-item">
+                <div class="nav-row-item" onclick="goToColl()">
                     <img src="./icons/collections.svg" />
                     <span class="nav-row-text">Collections</span>
                 </div>
@@ -53,15 +53,15 @@
     </header>
 
     <nav class="mobile-nav" id="mobile-menu">
-        <div class="mobile-nav-item  mobile-mt">
+        <div class="mobile-nav-item  mobile-mt" onclick="goToMovies()">
             <img src="./icons/movies-icon.png" />
             <span class="nav-row-text">Movies</span>
         </div>
-        <div class="mobile-nav-item">
+        <div class="mobile-nav-item" onclick="goToMovies()">
             <img src="./icons/tv-icon.png" />
             <span class="nav-row-text">TV Series</span>
         </div>
-        <div class="mobile-nav-item">
+        <div class="mobile-nav-item" onclick="goToColl()">
             <img src="./icons/collections.svg" />
             <span class="nav-row-text">Collections</span>
         </div>
@@ -80,6 +80,16 @@
         
         closer.onclick = function() {
             menu.style.display = "none";
+        }
+
+        function goToMovies() {
+            window.location.href = "./movies.html"
+        }
+        function goToColl() {
+            window.location.href = "./collections.html"
+        }
+        function goToPremium() {
+            window.location.href = "./premium.html"
         }
     </script>
 

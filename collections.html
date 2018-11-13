@@ -16,7 +16,7 @@
         <div class="container between">
             <h1>CinoGen</h1>
             <div class="header-row">
-                <button class="header-btn">Get premium</button>
+                <button class="header-btn" onclick="goToPremium()">Get premium</button>
                 <img src="./icons/mail.svg" class="header-icon-ml" />
                 <img src="./icons/bell.svg" class="header-icon" />
                 <img src="./icons/user.svg" class="header-icon" />
@@ -27,15 +27,15 @@
     <nav class="main-nav">
         <div class="container between">
             <div class="nav-row">
-                <div class="nav-row-item nav-active-item">
+                <div class="nav-row-item" onclick="goToMovies()">
                     <img src="./icons/movies-icon.png" />
                     <span class="nav-row-text">Movies</span>
                 </div>
-                <div class="nav-row-item">
+                <div class="nav-row-item" onclick="goToMovies()">
                     <img src="./icons/tv-icon.png" />
                     <span class="nav-row-text">TV Series</span>
                 </div>
-                <div class="nav-row-item">
+                <div class="nav-row-item nav-active-item" onclick="goToColl()">
                     <img src="./icons/collections.svg" />
                     <span class="nav-row-text">Collections</span>
                 </div>
@@ -52,7 +52,7 @@
         <div class="sub-between">
             <div class="sub-nav">
                 <span class="sub-nav-item subnav-active">My Collections</span>
-                <span class="sub-nav-item">Watch later</span>
+                <span class="sub-nav-item" onclick="goToWatch()">Watch later</span>
                 <span class="sub-nav-item">Favorites</span>
             </div>
             <div class="sub-btn-group">
@@ -76,15 +76,15 @@
     </header>
 
     <nav class="mobile-nav" id="mobile-menu">
-        <div class="mobile-nav-item  mobile-mt">
+        <div class="mobile-nav-item  mobile-mt" onclick="goToMovies()">
             <img src="./icons/movies-icon.png" />
             <span class="nav-row-text">Movies</span>
         </div>
-        <div class="mobile-nav-item">
+        <div class="mobile-nav-item" onclick="goToMovies()">
             <img src="./icons/tv-icon.png" />
             <span class="nav-row-text">TV Series</span>
         </div>
-        <div class="mobile-nav-item">
+        <div class="mobile-nav-item" onclick="goToColl()">
             <img src="./icons/collections.svg" />
             <span class="nav-row-text">Collections</span>
         </div>
@@ -103,6 +103,19 @@
         
         ocloser.onclick = function() {
             menu.style.display = "none";
+        }
+
+        function goToMovies() {
+            window.location.href = "./movies.html"
+        }
+        function goToColl() {
+            window.location.href = "./collections.html"
+        }
+        function goToWatch() {
+            window.location.href = "./watch-later.html"
+        }
+        function goToPremium() {
+            window.location.href = "./premium.html"
         }
     </script>
 
@@ -332,7 +345,7 @@
 
 <div class="container">
     <div class="grid-collections">
-        <div class="collections-group">
+        <div class="collections-group" onclick="goToAdd()">
             <div class="grid-collections-item">
                 <img src="./img/movie1.jpg" class="grid-img-1" />
                 <img src="./img/movie2.jpg" class="grid-img-2" />
@@ -341,7 +354,7 @@
             <h6>Superhero Top Rated List A</h6>
         </div>
         <div class="collections-group">
-            <div class="grid-collections-item">
+            <div class="grid-collections-item" onclick="goToAdd()">
                 <img src="./img/movie4.jpg" class="grid-img-1" />
                 <img src="./img/movie7.jpg" class="grid-img-2" />
                 <img src="./img/movie6.jpg" class="grid-img-3" />
@@ -351,6 +364,11 @@
     </div>
 </div>
 
+<script>
+function goToAdd() {
+    window.location.href = "./collections-add.html"
+}
+</script>
 
 
 </body>
