@@ -1,0 +1,79 @@
+body {
+  background: #fff !important;
+}
+
+.btn-linear {
+  background-image: linear-gradient(to right, #6c3cfe, #3cccfe);
+  color: #fff;
+  border-radius: 999px;
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+  outline: 0;
+  font-family: 'TruenoRegular'
+}
+
+.btn-long {
+  padding: 1.5rem 3.5rem;
+}
+
+.btn-reg {
+  padding: 1.5rem 8rem;
+}
+
+.landing-heading {
+  font-family: 'TruenoExtraBold';
+  font-size: 5.6rem;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: #333333;
+}
+
+.landing-text {
+  font-family: 'TruenoLight';
+  font-size: 2.4rem;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+
+.landing-secondary {
+  font-family: 'TruenoBold';
+  font-size: 4.4rem;
+  line-height: 1.09;
+  letter-spacing: -0.6px;
+  color: #333333;
+}
+
+.landing-secondary-text {
+  font-family: 'TruenoLight';
+  font-size: 1.8rem;
+  line-height: 1.56;
+  color: #818181;
+}
+
+.landing-input {
+  border-radius: 100px;
+  background-color: rgba(235, 235, 235, 0.6);
+  padding: 1.2rem 3rem;
+  font-family: 'TruenoLight';
+  line-height: 1.86;
+  color: #333333;
+}
+
+.landing-input::-webkit-input-placeholder {
+  color: #818181;
+  font-size: 1.4rem;
+}
+.landing-input:-ms-input-placeholder {
+  color: #818181;
+  font-size: 1.4rem;
+}
+.landing-input::-ms-input-placeholder {
+  color: #818181;
+  font-size: 1.4rem;
+}
+.landing-input::placeholder {
+  color: #818181;
+  font-size: 1.4rem;
+}

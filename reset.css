@@ -23,9 +23,29 @@
 }
 
 @font-face {
-  font-family: 'Trueno';
-  src: url('TruenoRg.woff2') format('woff2'),
-      url('TruenoRg.woff') format('woff');
+  font-family: 'TruenoRegular';
+  src: url('./fonts/TruenoRg.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TruenoLight';
+  src: url('./fonts/TruenoLt.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TruenoBold';
+  src: url('./fonts/TruenoBd.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TruenoExtraBold';
+  src: url('./fonts/TruenoExBd.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
