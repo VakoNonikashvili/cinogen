@@ -4,12 +4,10 @@
 }
 
 .main-header h1 {
-    font-family: TruenoRg;
+    font-family: 'Pacifico';
     font-size: 20px;
-    color: #fff;
-    font-size: 20px;
+    color: #ffffff;
     font-weight: 400;
-    letter-spacing: 2px;
 }
 
 .header-account {
@@ -637,3 +635,32 @@ input:checked + .slider:before {
 }
 
 
+
+footer h3 {
+    font-family: 'Pacifico';
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+footer {
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+    padding: 3.2rem 0;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-menu {
+    margin-left: 12.3rem;
+}
+
+.footer-menu a {
+    font-family: 'Roboto';
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.footer-menu a:not(:last-child) {
+    margin-right: 5rem;
+}

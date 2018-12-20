@@ -13,12 +13,12 @@
 <body>
     <header class="main-header">
         <div class="container between">
-            <h1>CinoGen</h1>
+            <h1 class="brand-logo">Cineplex</h1>
             <div class="header-row">
                 <button class="header-btn" onclick="goToPremium()">Get premium</button>
                 <img src="./icons/mail.svg" class="header-icon-ml" />
-                <img src="./icons/bell.svg" class="header-icon" />
                 <img src="./icons/user.svg" class="header-icon" />
+                <img src="./icons/bell.svg" class="header-icon" />
             </div>
         </div>
     </header>
@@ -99,8 +99,12 @@
         <div class="between">
             <h2 class="front-heading pink">Added This Week</h2>
             <div class="view-all">
-                <span>View All</span>
-                <img class="view-all-img" src="./icons/right.png" />
+                <div class="view-box">
+                    <img src="./icons/left.png" class="disabled" />
+                </div>
+                <div class="view-box">
+                    <img src="./icons/right.png" />
+                </div>
             </div>
         </div>
     </div>
@@ -147,14 +151,14 @@
                 <div class="overlay this-week-overlay"></div>
             </div>
         </div>
-        <div class="dots">
-            <div class="dot-item dot-item-active"></div>
-            <div class="dot-item"></div>
-            <div class="dot-item"></div>
-            <div class="dot-item"></div>
-            <div class="dot-item"></div>
-            <div class="dot-item"></div>
-            <div class="dot-item"></div>
+        <div class="dot-lines">
+            <div class="dot-line dot-line-active"></div>
+            <div class="dot-line"></div>
+            <div class="dot-line"></div>
+            <div class="dot-line"></div>
+            <div class="dot-line"></div>
+            <div class="dot-line"></div>
+            <div class="dot-line"></div>
         </div>
     </div>
 
@@ -165,7 +169,6 @@
         <div class="between">
             <h2 class="front-heading pink">Watching</h2>
             <div class="view-all">
-                <span class="view-all-text">View All</span>
                 <div class="view-box">
                     <img src="./icons/left.png" class="disabled" />
                 </div>
@@ -290,8 +293,14 @@
                 </div>
             </div>
         </div>
-        <div class="big-progress">
-            <div class="big-progress-inside"></div>
+        <div class="dot-lines">
+            <div class="dot-line dot-line-active"></div>
+            <div class="dot-line"></div>
+            <div class="dot-line"></div>
+            <div class="dot-line"></div>
+            <div class="dot-line"></div>
+            <div class="dot-line"></div>
+            <div class="dot-line"></div>
         </div>
     </div>
 
@@ -320,7 +329,6 @@
         <div class="between">
             <h2 class="front-heading pink">This Week</h2>
             <div class="view-all">
-                <span class="view-all-text">View All</span>
                 <div class="view-box">
                     <img src="./icons/left.png" class="disabled" />
                 </div>
@@ -352,11 +360,200 @@
                 <img src="./img/movie14.jpg" class="continue-img" />
             </div>
         </div>
-        <div class="big-progress">
-            <div class="big-progress-inside"></div>
+        <div class="dot-lines">
+            <div class="dot-line dot-line-active"></div>
+            <div class="dot-line"></div>
+            <div class="dot-line"></div>
+            <div class="dot-line"></div>
+            <div class="dot-line"></div>
+            <div class="dot-line"></div>
+            <div class="dot-line"></div>
         </div>
     </div>
 
+    <div class="container ending">
+        <div class="between">
+            <h2 class="front-heading">Trailers</h2>
+            <div class="view-all">
+                <div class="view-box">
+                    <img src="./icons/left.png" class="disabled" />
+                </div>
+                <div class="view-box">
+                    <img src="./icons/right.png" />
+                </div>
+            </div>
+        </div>
+        <div class="trailer-grid">
+            <div class="trailer-col">
+                <div class="trailer trail-1">
+                    <div class="trail-box">
+                        <img src="./icons/play-white.svg" alt="play">
+                    </div>
+                </div>
+                <span class="trailer-text">Shaun the Sheep Movie: Farmageddon</span>
+                <span class="trailer-date">2019</span>
+            </div>
+            <div class="trailer-col">
+                <div class="trailer trail-3">
+                    <div class="trail-box">
+                        <img src="./icons/play-white.svg" alt="play">
+                    </div>
+                </div>
+                <span class="trailer-text">Godzilla: King of the Monster</span>
+                <span class="trailer-date">2019</span>
+            </div>
+            <div class="trailer-col">
+                <div class="trailer trail-2">
+                    <div class="trail-box">
+                        <img src="./icons/play-white.svg" alt="play">
+                    </div>
+                </div>
+                <span class="trailer-text">Avengers: Endgame</span>
+                <span class="trailer-date">2019</span>
+            </div>
+            <div class="trailer-col">
+                <div class="trailer trail-4">
+                    <div class="trail-box">
+                        <img src="./icons/play-white.svg" alt="play">
+                    </div>
+                </div>
+                <span class="trailer-text">Captain Marvel</span>
+                <span class="trailer-date">2019</span>
+            </div>
+        </div>
+        <div class="dot-lines">
+            <div class="dot-line dot-line-active"></div>
+            <div class="dot-line"></div>
+            <div class="dot-line"></div>
+            <div class="dot-line"></div>
+            <div class="dot-line"></div>
+            <div class="dot-line"></div>
+            <div class="dot-line"></div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h2 class="front-col-heading">Our collections</h2>
+        <div class="front-col-grid">
+            <div class="coll-col">
+                <div class="love-pill">
+                    <img src="./icons/heart.svg" alt="heart">
+                    <span>110</span>
+                </div>
+                <div class="coll-grid">
+                    <img src="./img/movie1.jpg" class="grid-img-1" />
+                    <img src="./img/movie2.jpg" class="grid-img-2" />
+                    <img src="./img/movie3.jpg" class="grid-img-3" />
+                </div>
+                <span class="coll-text">Golden Globe Awards 2019 <br />Nominess. Movies</span>
+                <span class="coll-btn">Show collection</span>
+            </div>
+            <div class="coll-col">
+                <div class="love-pill">
+                    <img src="./icons/heart.svg" alt="heart">
+                    <span>139</span>
+                </div>
+                <div class="coll-grid">
+                    <img src="./img/movie4.jpg" class="grid-img-1" />
+                    <img src="./img/movie5.jpg" class="grid-img-2" />
+                    <img src="./img/movie6.jpg" class="grid-img-3" />
+                </div>
+                <span class="coll-text">Marvel Cinematic Universe</span>
+                <span class="coll-btn">Show collection</span>
+            </div>
+            <div class="coll-col">
+                <div class="love-pill love-pill-hot">
+                    <img src="./icons/heart.svg" alt="heart">
+                    <span>227</span>
+                </div>
+                <div class="coll-grid">
+                    <img src="./img/movie7.jpg" class="grid-img-1" />
+                    <img src="./img/movie8.jpg" class="grid-img-2" />
+                    <img src="./img/movie9.jpg" class="grid-img-3" />
+                </div>
+                <span class="coll-text">Movies With Time Loops</span>
+                <span class="coll-btn">Show collection</span>
+            </div>
+            <div class="coll-col">
+                <div class="love-pill love-pill-hot">
+                    <img src="./icons/heart.svg" alt="heart">
+                    <span>227</span>
+                </div>
+                <div class="coll-grid">
+                    <img src="./img/movie10.jpg" class="grid-img-1" />
+                    <img src="./img/movie11.jpg" class="grid-img-2" />
+                    <img src="./img/movie12.jpg" class="grid-img-3" />
+                </div>
+                <span class="coll-text">Feel the Christmas spirit</span>
+                <span class="coll-btn">Show collection</span>
+            </div>
+            <div class="coll-col">
+                <div class="love-pill">
+                    <img src="./icons/heart.svg" alt="heart">
+                    <span>110</span>
+                </div>
+                <div class="coll-grid">
+                    <img src="./img/movie1.jpg" class="grid-img-1" />
+                    <img src="./img/movie2.jpg" class="grid-img-2" />
+                    <img src="./img/movie3.jpg" class="grid-img-3" />
+                </div>
+                <span class="coll-text">Golden Globe Awards 2019 <br />Nominess. Movies</span>
+                <span class="coll-btn">Show collection</span>
+            </div>
+            <div class="coll-col">
+                <div class="love-pill">
+                    <img src="./icons/heart.svg" alt="heart">
+                    <span>139</span>
+                </div>
+                <div class="coll-grid">
+                    <img src="./img/movie4.jpg" class="grid-img-1" />
+                    <img src="./img/movie5.jpg" class="grid-img-2" />
+                    <img src="./img/movie6.jpg" class="grid-img-3" />
+                </div>
+                <span class="coll-text">Marvel Cinematic Universe</span>
+                <span class="coll-btn">Show collection</span>
+            </div>
+            <div class="coll-col">
+                <div class="love-pill love-pill-hot">
+                    <img src="./icons/heart.svg" alt="heart">
+                    <span>227</span>
+                </div>
+                <div class="coll-grid">
+                    <img src="./img/movie7.jpg" class="grid-img-1" />
+                    <img src="./img/movie8.jpg" class="grid-img-2" />
+                    <img src="./img/movie9.jpg" class="grid-img-3" />
+                </div>
+                <span class="coll-text">Movies With Time Loops</span>
+                <span class="coll-btn">Show collection</span>
+            </div>
+            <div class="coll-col">
+                <div class="love-pill love-pill-hot">
+                    <img src="./icons/heart.svg" alt="heart">
+                    <span>227</span>
+                </div>
+                <div class="coll-grid">
+                    <img src="./img/movie10.jpg" class="grid-img-1" />
+                    <img src="./img/movie11.jpg" class="grid-img-2" />
+                    <img src="./img/movie12.jpg" class="grid-img-3" />
+                </div>
+                <span class="coll-text">Feel the Christmas spirit</span>
+                <span class="coll-btn">Show collection</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <footer>
+            <h3 class="brand-logo">Cineplex</h3>
+            <div class="footer-menu">
+                <a href="#">FAQ</a>
+                <a href="#">Contact</a>
+                <a href="#">Settings</a>
+                <a href="#">Premium</a>
+            </div>
+        </footer>
+    </div>
 
 </body>
 </html>
