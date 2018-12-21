@@ -686,6 +686,16 @@ footer {
     .footer-menu {
         margin-left: 0;
     }
+
+    .footer-menu a:not(:last-child) {
+        margin-right: 3.2rem;
+    }
+}
+
+@media only screen and (max-width: 345px) {
+    .footer-menu a:not(:last-child) {
+        margin-right: 2.5rem;
+    }
 }
 
 .brand-logo {
