@@ -433,7 +433,6 @@
     font-size: 13px;
 }
 
-
 .front-col-heading {
     font-family: 'Roboto';
     font-size: 25px;
@@ -558,3 +557,26 @@
     background-color: #d8d8d8;
 }
 
+@media only screen and (max-width: 600px) {
+    .trailer {
+        width: 265px;
+        height: 130.3px;
+    }
+
+    .trailer-text {
+        font-size: 14px;
+    }
+
+    .trail-box {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .trail-box img {
+        height: 20px;
+    }
+
+    .frontal-col {
+        display: none;
+    }
+}

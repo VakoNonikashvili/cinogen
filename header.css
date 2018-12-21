@@ -543,7 +543,12 @@ input:checked + .slider:before {
     height: 50px;
     padding: 0 2rem;
     align-items: center;
-    background: var(--black);
+    background-color: #1b1d27;
+}
+
+.mod-head {
+    display: flex;
+    align-items: center;
 }
 
 @media only screen and (max-width: 700px) {
@@ -573,15 +578,16 @@ input:checked + .slider:before {
 }
 
 .mobile-menu-icon {
-    width: 21px;
+    width: 23px;
     height: auto;
     cursor: pointer;
 }
 
 .mobile-search-icon {
     width: auto;
-    height: 16px;
+    height: 18px;
     cursor: pointer;
+    margin: 0 1.5rem;
 }
 
 .mobile-nav {
@@ -663,4 +669,28 @@ footer {
 
 .footer-menu a:not(:last-child) {
     margin-right: 5rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+    footer {
+        margin-top: 0;
+        flex-direction: column;
+        padding: 1.5rem 0 2.5rem;
+    }
+
+    footer h3 {
+        margin-bottom: 2.5rem;
+    }
+
+    .footer-menu {
+        margin-left: 0;
+    }
+}
+
+.brand-logo {
+    font-family: 'Pacifico';
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 400;
 }
