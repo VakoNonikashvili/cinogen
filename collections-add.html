@@ -361,10 +361,18 @@ window.onclick = function(event) {
     <div class="grid">
         <div class="card">
             <div class="add-request">
-                <div class="add-box" id="list-btn">
+                <div class="add-box" id="search-btn">
                     <img src="./icons/plus.svg" />
                 </div>
                 <span class="add-request-text">Add Movies to<br />this Collection</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="add-request">
+                <div class="add-box" id="result-btn">
+                    <img src="./icons/plus.svg" />
+                </div>
+                <span class="add-request-text">Add Movies to<br />with Search Results</span>
             </div>
         </div>
         <div class="card">
@@ -432,6 +440,104 @@ window.onclick = function(event) {
     }
 </script>
 
+
+<div class="modal" id="search-modal">
+    <div class="modal-content">
+        <div class="close-modal" id="close-search"><img src="./icons/close.svg" /></div>
+        <span class="mod-search-head">Add to collection</span>
+        <span class="mod-search-sub">Gangster Flicks Old Skool</span>
+        <span class="mod-search-text">Search for a movie or TV series</span>
+        <input class="modal-input" placeholder="Type the name of the movie or TV serie" />
+        <div class="modal-row">
+            <button class="modal-btn">Add</button>
+            <button class="modal-btn cancel-btn" id="cancel-search">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    const modal3 = document.getElementById('search-modal');
+    const btn3 = document.getElementById("search-btn");
+    const closer3 = document.getElementById("close-search");
+    const cancel3 = document.getElementById("cancel-search");
+    
+    btn3.onclick = function() {
+        modal3.style.display = "flex";
+    }
+    
+    closer3.onclick = function() {
+        modal3.style.display = "none";
+    }
+    
+    cancel3.onclick = function() {
+        modal3.style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+        if (event.target == modal3) {
+            modal3.style.display = "none";
+        }
+    }
+</script>
+
+
+<div class="modal" id="result-modal">
+    <div class="modal-content">
+        <div class="close-modal" id="close-result"><img src="./icons/close.svg" /></div>
+        <span class="mod-search-head">Add to collection</span>
+        <span class="mod-search-sub">Gangster Flicks Old Skool</span>
+        <span class="mod-search-text">Search for a movie or TV series</span>
+        <input class="modal-input" value="Sicario" />
+        <div class="grid grid-modal">
+            <div class="card">
+                <div class="add-request add-request-abs">
+                    <div class="add-box">
+                        <img src="./icons/plus.svg" />
+                    </div>
+                    <span class="add-request-text">Add to collection</span>
+                </div>
+                <img src="./img/movie14.jpg" class="result-img" />
+            </div>
+            <div class="card">
+                <div class="add-request add-request-abs">
+                    <div class="add-box">
+                        <img src="./icons/plus.svg" />
+                    </div>
+                    <span class="add-request-text">Add to collection</span>
+                </div>
+                <img src="./img/movie15.jpg" class="result-img" />
+            </div>
+        </div>
+        <div class="modal-row">
+            <button class="modal-btn cancel-btn only-cancel" id="cancel-result">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    const modal4 = document.getElementById('result-modal');
+    const btn4 = document.getElementById("result-btn");
+    const closer4 = document.getElementById("close-result");
+    const cancel4 = document.getElementById("cancel-result");
+    
+    btn4.onclick = function() {
+        modal4.style.display = "flex";
+    }
+    
+    closer4.onclick = function() {
+        modal4.style.display = "none";
+    }
+    
+    cancel4.onclick = function() {
+        modal4.style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+        if (event.target == modal4) {
+            modal4.style.display = "none";
+        }
+    }
+</script>
 
 </body>
 </html>

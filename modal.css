@@ -149,3 +149,32 @@
 .middle-text {
     margin: .4rem 0 2rem;
 }
+
+
+.mod-search-head {
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.25;
+    color: #f4f4f4;
+    margin-bottom: .2rem;
+}
+
+.mod-search-sub {
+    font-family: 'Roboto';
+    font-size: 17px;
+    line-height: 1.47;
+    color: #f4f4f4;
+    margin-bottom: 2.8rem;
+}
+
+.mod-search-text {
+    font-family: 'Roboto';
+    font-size: 14px;
+    color: #f4f4f4;
+    margin-bottom: .5rem;
+}
+
+.only-cancel {
+    margin-left: 0 !important;
+}

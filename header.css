@@ -220,7 +220,7 @@
 }
 
 .filter-col:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 70px;
 }
 
 .filter-heading {
@@ -261,7 +261,7 @@
 }
 
 .filter-input-col:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 50px;
 }
 
 
@@ -280,20 +280,18 @@
 
 .date-input {
     font-size: 1.8rem;
-    background: #404040;
     border: 0;
     display: inline-flex;
     padding: 1rem .5rem;
-    max-width: 7.7rem;
+    max-width: 11.5rem;
     outline: 0;
     border-radius: 3px;
-    color: var(--light);
     text-align: center;
+    color: black;
 }
 
 .date-label {
     font-size: 15px;
-    color: #404040;
     margin-bottom: 9px;
 }
 
@@ -326,7 +324,6 @@
 
 
 .clear-filter {
-    margin-top: 3rem;
     display: flex;
     justify-content: flex-end;
 }
@@ -358,21 +355,22 @@
     border: solid 1px var(--blue);
     background-color: var(--blue);
     cursor: pointer;
-    padding: .6rem 7.5rem;
-    font-size: 20px;
-    font-weight: 500;
+    padding: 1rem 5.8rem;
     outline: 0;
     color: var(--light);
     white-space: nowrap;
-    letter-spacing: 1.7px;
     text-align: center;
-    margin-left: 2rem;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: bold;
+    color: #f4f4f4;
 }
 
 
 .genre-row {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 2.5rem;
 }
 
@@ -415,9 +413,9 @@
 }
 
 .checkbox p {
-    color: rgb(68,68,68);
+    font-family: 'Roboto';
     font-size: 14px;
-    font-weight: 600;
+    color: #ffffff;
 }
 
 .checkbox input:checked ~ p {
@@ -701,4 +699,127 @@ footer {
     font-size: 20px;
     color: #ffffff;
     font-weight: 400;
+}
+
+
+.notif {
+    display: flex;
+    align-items: center;
+    height: 52px;
+    background: var(--blue);
+}
+
+.notif-flex {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.my-auto {
+    margin-left: auto;
+}
+
+.notif-text {
+    font-family: 'Roboto';
+    font-size: 13px;
+    color: #ffffff;
+}
+
+.notif-learn {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 500; 
+    cursor: pointer;
+}
+
+.notif-close {
+    width: 13px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+
+.select-container {
+    position: relative;
+    width: 100%;
+    max-width: 25rem;
+}
+
+.select-container img {
+    position: absolute;
+    top: 60%;
+    right: 2rem;
+    transform: translateY(-50%);
+    width: 10px;
+    height: auto;
+    pointer-events: none;
+}
+
+.select-container select {
+    font-size: 1.6rem;
+    color: #fff;
+    background: var(--dark2);
+    border: 0;
+    outline: 0;
+    padding: 1.1rem 2rem;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-progress-appearance: none;
+    width: 100%;
+    margin-top: .6rem;
+}
+
+.filter-select {
+    margin-bottom: 4rem;
+}
+
+
+.filter-modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(3, 5, 11, 0.85);
+    justify-content: center;
+    z-index: 9999;
+}
+
+
+.filter-mod-content {
+    border-radius: 6px;
+    background-image: linear-gradient(129deg, #10172b, #070b16);
+    display: flex;
+    flex-direction: column;
+    padding: 5.5rem 4.4rem 5.5rem 5.9rem;
+    position: relative;
+    width: 100%;
+    margin-top: 15rem;
+    max-width: 1360px;
+    height: fit-content;
+}
+
+.close-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+}
+
+.close-modal img {
+    width: 13px;
+    height: 13px;
 }

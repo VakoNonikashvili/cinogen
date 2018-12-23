@@ -55,7 +55,7 @@
                 <span class="sub-nav-item">Recently Added</span>
                 <span class="sub-nav-item">Popularity</span>
             </div>
-            <button class="filter-btn" id="filter-btn" onclick="toggleFilter()">
+            <button class="filter-btn" id="filter-btn">
                 <span>Filter</span>
                 <img src="./icons/chevron-down.svg" />
             </button>
@@ -63,190 +63,197 @@
         <div class="divider"></div>
     </div>
 
-    <div class="filter-fluid d-none" id="filter">
-        <div class="container">
-            <div class="filter-close" id="close-btn" onclick="toggleFilter()">
-                <img src="./icons/close.svg" />
+<div class="filter-modal" id="filter-modal">
+    <div class="filter-mod-content">
+        <div class="close-modal" id="close-filter"><img src="./icons/close.svg" /></div>
+        <div class="filter-row">
+            <div class="filter-col">
+                <span class="filter-heading">Type</span>
+                <label class="checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <p>All</p>
+                </label>
+                <label class="checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <p>Movies</p>
+                </label>
+                <label class="checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <p>TV Series</p>
+                </label>
             </div>
-            <div class="filter-row">
-                <div class="filter-col">
-                    <span class="filter-heading">Type</span>
-                    <label class="checkbox">
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                        <p>All</p>
-                    </label>
-                    <label class="checkbox">
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                        <p>Movies</p>
-                    </label>
-                    <label class="checkbox">
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                        <p>TV Series</p>
-                    </label>
-                </div>
-                <div class="filter-col">
-                    <div class="genre-row">
-                        <span class="filter-heading nom">Genres</span>
-                        <div class="toggle-group">
-                            <span class="toggle-text toggle-text-first">Or</span>
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
-                            <span class="toggle-text toggle-text-second">And</span>
-                        </div>
-                    </div>
-                    <div class="filter-input-row">
-                        <div class="filter-input-col">
-                            <label class="checkbox">
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                                <p>Action</p>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                                <p>Biography</p>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                                <p>Documentary</p>
-                            </label>
-                        </div>
-                        <div class="filter-input-col">
-                            <label class="checkbox">
-                                <input type="checkbox" checked>
-                                <span class="checkmark"></span>
-                                <p>Adventure</p>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                                <p>Comedy</p>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                                <p>Drama</p>
-                            </label>
-                        </div>
-                        <div class="filter-input-col">
-                            <label class="checkbox">
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                                <p>Crime</p>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                                <p>Family</p>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                                <p>Horror</p>
-                            </label>
-                        </div>
-                        <div class="filter-input-col">
-                            <label class="checkbox">
-                                <input type="checkbox" checked>
-                                <span class="checkmark"></span>
-                                <p>Fanatsy</p>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                                <p>Western</p>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                                <p>Sci-Fi</p>
-                            </label>
-                        </div>
-                        <div class="filter-input-col">
-                            <label class="checkbox">
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                                <p>History</p>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                                <p>Mystery</p>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                                <p>Thriller</p>
-                            </label>
-                        </div>
-                        <div class="filter-input-col">
-                            <label class="checkbox">
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                                <p>Romance</p>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox" checked>
-                                <span class="checkmark"></span>
-                                <p>War</p>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                                <p>Animaton</p>
-                            </label>
-                        </div>
+            <div class="filter-col">
+                <div class="genre-row">
+                    <span class="filter-heading nom">Genres</span>
+                    <div class="toggle-group">
+                        <span class="toggle-text toggle-text-first">Or</span>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                        <span class="toggle-text toggle-text-second">And</span>
                     </div>
                 </div>
-                <div class="filter-col">
-                    <span class="filter-heading filter-heading-disabled">Release date</span>
-                    <div class="date-row">
-                        <label class="date-col">
-                            <span class="date-label">From</span>
-                            <input type="text" class="date-input" />
+                <div class="filter-input-row">
+                    <div class="filter-input-col">
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p>Action</p>
                         </label>
-                        <label class="date-col">
-                            <span class="date-label">To</span>
-                            <input type="text" class="date-input" />
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p>Biography</p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p>Documentary</p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" checked>
+                            <span class="checkmark"></span>
+                            <p>Fanatsy</p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p>Music</p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p>Science Fiction</p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p>Western</p>
                         </label>
                     </div>
-                </div>
-                <div class="filter-col">
-                    <span class="filter-heading">iMDB Rating</span>
-                    <div class="date-row">
-                        <label class="rating-col">
-                            <span class="rating-label">Minimum</span>
-                            <input type="text" class="rating-input" value="5.0"/>
+                    <div class="filter-input-col">
+                        <label class="checkbox">
+                            <input type="checkbox" checked>
+                            <span class="checkmark"></span>
+                            <p>Adventure</p>
                         </label>
-                        <span class="rating-label rating-label-big">x</span>
-                        <label class="rating-col">
-                            <span class="rating-label">Maximum</span>
-                            <input type="text" class="rating-input" value="9.0" />
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p>Comedy</p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p>Drama</p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p>History</p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p>Mystery</p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p>Thriller</p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p>Animaton</p>
+                        </label>
+                    </div>
+                    <div class="filter-input-col">
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p>Crime</p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p>Family</p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p>Horror</p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p>Romance</p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" checked>
+                            <span class="checkmark"></span>
+                            <p>War</p>
                         </label>
                     </div>
                 </div>
             </div>
-            <div class="clear-filter">
-                <button class="clear-btn">
-                    <img src="./icons/close-white.svg" />
-                    Clear All Filters
-                </button>
-                <button class="search-btn">Search</button>
+            <div class="filter-col">
+                <span class="filter-heading">Country</span>
+                <div class="select-container filter-select">
+                    <select>
+                        <option>All</option>
+                        <option>Japan</option>
+                        <option>United States</option>
+                        <option>Germany</option>
+                        <option>France</option>
+                    </select>
+                    <img src="./icons/down-arrow.svg" />
+                </div>
+                <span class="filter-heading">Release date</span>
+                <div class="date-row">
+                    <label class="date-col">
+                        <span class="date-label">From</span>
+                        <input type="text" class="date-input" />
+                    </label>
+                    <label class="date-col">
+                        <span class="date-label">To</span>
+                        <input type="text" class="date-input" />
+                    </label>
+                </div>
+            </div>
+            <div class="filter-col">
+                <span class="filter-heading">Average rating</span>
             </div>
         </div>
+        <div class="clear-filter">
+            <button class="search-btn">Search</button>
+        </div>
     </div>
-    <script>
-        function toggleFilter() {
-        var element = document.getElementById("filter");
-        element.classList.toggle("d-none");
-    } 
-    </script>
+</div>
+        
+<script>
+    const modal4 = document.getElementById('filter-modal');
+    const btn4 = document.getElementById("filter-btn");
+    const closer4 = document.getElementById("close-filter");
+    
+    btn4.onclick = function() {
+        modal4.style.display = "flex";
+    }
+    
+    closer4.onclick = function() {
+        modal4.style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+        if (event.target == modal4) {
+            modal4.style.display = "none";
+        }
+    }
+</script>
 
 
 <header class="mobile-header">

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./header.css" />
+    <link rel="stylesheet" href="./movies.css" />
+    <link rel="stylesheet" href="./pagination.css" />
+    <link rel="stylesheet" href="./modal.css" />
+    <title>Cineplex</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container between">
+            <h1>CinoGen</h1>
+            <div class="header-row">
+                <button class="header-btn">Get premium</button>
+                <img src="./icons/mail.svg" class="header-icon-ml" />
+                <img src="./icons/bell.svg" class="header-icon" />
+                <img src="./icons/user.svg" class="header-icon" />
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container between">
+            <div class="nav-row">
+                <div class="nav-row-item">
+                    <img src="./icons/movies-icon.png" />
+                    <span class="nav-row-text">Movies</span>
+                </div>
+                <div class="nav-row-item nav-active-item">
+                    <img src="./icons/tv-icon.png" />
+                    <span class="nav-row-text">TV Series</span>
+                </div>
+                <div class="nav-row-item">
+                    <img src="./icons/collections.svg" />
+                    <span class="nav-row-text">Collections</span>
+                </div>
+            </div>
+            <div class="nav-search">
+                <input class="nav-search-input" type="text" placeholder="Search" />
+                <img src="./icons/search.png" />
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="sub-between">
+            <div class="sub-nav">
+                <span class="sub-nav-item">View all request</span>
+                <span class="sub-nav-item">View filled request</span>
+                <span class="sub-nav-item subnav-active">Make a new Request</span>
+            </div>
+        </div>
+        <div class="divider"></div>
+    </div>
+
+    <header class="mobile-header">
+        <img src="./icons/search-white.svg" class="mobile-search-icon" />
+        <span>CinoGen</span>
+        <img src="./icons/menu.svg" class="mobile-menu-icon" id="mobile-btn" />
+    </header>
+
+    <nav class="mobile-nav" id="mobile-menu">
+        <div class="mobile-nav-item  mobile-mt">
+            <img src="./icons/movies-icon.png" />
+            <span class="nav-row-text">Movies</span>
+        </div>
+        <div class="mobile-nav-item">
+            <img src="./icons/tv-icon.png" />
+            <span class="nav-row-text">TV Series</span>
+        </div>
+        <div class="mobile-nav-item">
+            <img src="./icons/collections.svg" />
+            <span class="nav-row-text">Collections</span>
+        </div>
+        <span class="mobile-account">My account</span>
+        <img src="./icons/close-white.svg" class="mobile-close-icon" id="mobile-closer" />
+    </nav>
+
+    <script>
+        const ibtn = document.getElementById('mobile-btn');
+        const menu = document.getElementById("mobile-menu");
+        const ocloser = document.getElementById("mobile-closer");
+        
+        ibtn.onclick = function() {
+            menu.style.display = "flex";
+        }
+        
+        ocloser.onclick = function() {
+            menu.style.display = "none";
+        }
+    </script>
+
+
+  <div class="container">
+    <div class="new-req">
+      <span class="modal-head new-req-head">Request content</span>
+      <span class="modal-text modal-text-second new-req-text">Copy and Paste an IMDB-link in this format <span class="highlighted">http://www.imdb.com/title/tt0111161/</span></span>
+      <input class="modal-input input-iconed new-req-input" placeholder="Enter Imdb link" />
+      <button class="modal-btn req-btn">Request</button>
+    </div>
+  </div>
+
+
+</body>
+</html>
