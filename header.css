@@ -705,7 +705,7 @@ footer {
 .notif {
     display: flex;
     align-items: center;
-    height: 52px;
+    padding: 1.6rem;
     background: var(--blue);
 }
 
@@ -717,6 +717,8 @@ footer {
 
 .my-auto {
     margin-left: auto;
+    flex-shrink: 1;
+    padding-right: 1rem;
 }
 
 .notif-text {
