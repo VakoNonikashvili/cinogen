@@ -854,6 +854,10 @@ footer {
     .filter-mod-content {
         margin-top: 0;
     }
+
+    .clear-filter {
+        justify-content: center;
+    }
 }
 
 @media only screen and (max-width: 680px) {
