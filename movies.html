@@ -48,7 +48,17 @@
     </nav>
 
 
-    <div class="container">
+    <header class="mobile-header">
+        <h3 class="brand-logo">cinogen</h3>
+        <div class="mod-head">
+            <button class="header-btn" onclick="goToPremium()">Get premium</button>
+            <img src="./icons/search-white.svg" class="mobile-search-icon" />
+            <img src="./icons/menu.svg" class="mobile-menu-icon" id="mobile-btn" />
+        </div>
+    </header>
+
+
+    <div class="container sub-parent">
         <div class="sub-between">
             <div class="sub-nav">
                 <span class="sub-nav-item subnav-active">All movies</span>
@@ -225,7 +235,7 @@
                     </label>
                 </div>
             </div>
-            <div class="filter-col">
+            <div class="filter-col filter-col-last">
                 <span class="filter-heading">Average rating</span>
             </div>
         </div>
@@ -242,10 +252,12 @@
     
     btn4.onclick = function() {
         modal4.style.display = "flex";
+        document.body.style.overflowY = 'hidden';
     }
     
     closer4.onclick = function() {
         modal4.style.display = "none";
+        document.body.style.overflowY = 'auto';
     }
     
     window.onclick = function(event) {
@@ -254,13 +266,6 @@
         }
     }
 </script>
-
-
-<header class="mobile-header">
-    <img src="./icons/search-white.svg" class="mobile-search-icon" />
-    <span>CinoGen</span>
-    <img src="./icons/menu.svg" class="mobile-menu-icon" id="mobile-btn" />
-</header>
 
 <nav class="mobile-nav" id="mobile-menu">
     <div class="mobile-nav-item  mobile-mt" onclick="goToMovies()">
