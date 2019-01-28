@@ -135,7 +135,7 @@
     height: 38px;
     border-radius: 50%;
     background: var(--dark);
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
     cursor: pointer;
